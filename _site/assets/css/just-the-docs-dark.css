@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;700&display=swap");
 .highlight, pre.highlight { background: #f9f9f9; color: #383942; }
 
 .highlight pre { background: #f9f9f9; }
@@ -2425,6 +2426,8 @@ a.skip-to-main:focus, a.skip-to-main:active { color: #2c84fa; background-color: 
 
 div.opaque { background-color: #27262b; }
 
+body { font-family: "Fira Sans", sans-serif; }
+
 a { color: black; }
 
 .nav-list-expander svg { color: white !important; }
@@ -2438,6 +2441,8 @@ a { color: black; }
 
 .nav-list-link { color: #b0b0b0; }
 
+.site-header::after { content: none !important; }
+
 .nav-list .nav-list-item .nav-list-link:hover, .nav-list .nav-list-item .nav-list-link.active { background-color: rgba(255, 255, 255, 0.3) !important; background-image: none !important; color: #ffffff !important; border-radius: 4px; transition: background-color 0.2s ease-in-out; }
 
 .nav-list .nav-list-item .nav-list-link::after { content: none !important; }
@@ -2446,7 +2451,7 @@ a { color: black; }
 
 .nav-list .nav-list-item .nav-list-link:hover { color: #fff; }
 
-.nav-list .nav-list-item { opacity: 1; }
+.nav-list .nav-list-item { opacity: 1; padding: 2px !important; }
 
 .nav-list .nav-list-item.disabled { color: rgba(255, 255, 255, 0.5); }
 
@@ -2471,13 +2476,13 @@ a { color: black; }
 .search-input:focus + .search-label .search-icon, .search-result-doc .search-result-icon { color: black !important; }
 
 /* Estiliza a barra de rolagem da sidebar */
-.side-bar::-webkit-scrollbar { width: 8px; /* Largura do scroll */ }
+::-webkit-scrollbar { width: 8px; /* Largura do scroll */ background: #191a1a !important; }
 
 /* Estiliza o fundo da barra de rolagem */
-.side-bar::-webkit-scrollbar-track { background: #191a1a !important; /* Deixa o fundo invisível */ }
+::-webkit-scrollbar-track { background: #191a1a !important; /* Deixa o fundo invisível */ }
 
 /* Estiliza o "thumb" (a parte móvel do scroll) */
-.side-bar::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.2); /* Cor suave */ border-radius: 10px; /* Deixa o scroll arredondado */ transition: background 0.3s ease-in-out; }
+::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.2) !important; /* Cor suave */ border-radius: 10px; /* Deixa o scroll arredondado */ transition: background 0.3s ease-in-out; }
 
 /* Efeito no hover da barra de rolagem */
-.side-bar::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.4); /* Fica um pouco mais visível no hover */ }
+::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.4); /* Fica um pouco mais visível no hover */ }
