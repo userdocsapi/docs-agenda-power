@@ -38,7 +38,6 @@ a {
   content: none !important;
 }
 
-
 .nav-list .nav-list-item .nav-list-link:hover,
 .nav-list .nav-list-item .nav-list-link.active {
   background-color: rgba(255, 255, 255, 0.3) !important;
@@ -152,4 +151,8 @@ a {
     255,
     0.4
   ); /* Fica um pouco mais visível no hover */
+}
+
+.site-logo {
+  background-position: center center !important;
 }
