@@ -1,5 +1,6 @@
 title: "Documentação Modelo"
 remote_theme: "just-the-docs/just-the-docs"
+repository: userdocsapi/my-documentation
 footer:
   content: "Documentação criada por [Seu Nome ou Empresa](https://seusite.com)"
 logo: "assets/logo.png"
