@@ -3,11 +3,11 @@ search_enabled: true
 remote_theme: "just-the-docs/just-the-docs"
 footer:
   content: "Documentação criada por [Seu Nome ou Empresa](https://seusite.com)"
-# logo: "assets/logo.png"
-mermaid: true
-livereload: true
-incremental: true
-force_polling: true
+baseurl: "/v1"
+callouts:
+  custom:
+    title: Customizado
+    color: pink
 just_the_docs:
   collections:
     backend:
@@ -179,3 +179,7 @@ just_the_docs:
           name: "Respostas dos Clientes"
         anamnese_signatures:
           name: "Assinaturas Digitais"
+mermaid: true
+livereload: true
+incremental: true
+force_polling: true

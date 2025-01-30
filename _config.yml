@@ -3,10 +3,10 @@ repository: "userdocsapi/docs-agenda-power"
 remote_theme: "just-the-docs/just-the-docs"
 nav_order: 1
 search_enabled: true
+logo: "/assets/images/logo.png"
 aux_links:
   "Repositório no GitHub":
     - "https://github.com/userdocsapi/docs-agenda-power"
-
 just_the_docs:
   collections:
     v1:
