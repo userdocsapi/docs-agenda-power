@@ -1,0 +1,24 @@
+🎨 Paleta de Cores do App
+:root {
+  --primary-color: #27ae60; /* Verde destaque */
+  --secondary-color: #ffc300; /* Amarelo destaque */
+  --error-color: #eb5757; /* Vermelho alerta */
+  --gray-light: #b2b2b2; /* Cinza claro */
+  --gray-medium: #a4acb9; /* Cinza médio */
+  --gray-dark: #6b7280; /* Cinza escuro */
+  --background-color: #191a1a; /* Fundo principal */
+
+  /* Cores do layout */
+  --text-color: white; /* Texto principal */
+  --header-bg: var(--gray-dark);
+  --sidebar-bg: var(--background-color);
+  --sidebar-text: var(--gray-light);
+  --footer-bg: var(--gray-dark);
+}
+
+/* 🌙 Aplicando a paleta ao tema */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+

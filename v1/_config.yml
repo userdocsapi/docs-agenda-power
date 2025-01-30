@@ -1,0 +1,181 @@
+title: "Agenda Power - v1"
+search_enabled: true
+remote_theme: "just-the-docs/just-the-docs"
+footer:
+  content: "Documentação criada por [Seu Nome ou Empresa](https://seusite.com)"
+# logo: "assets/logo.png"
+mermaid: true
+livereload: true
+incremental: true
+force_polling: true
+just_the_docs:
+  collections:
+    backend:
+      name: "Backend"
+      nav_order: 2
+      output: true
+      subcollections:
+        authentication:
+          name: "Autenticação e Usuários"
+          nav_order: 1
+        companies:
+          name: "Empresas"
+          nav_order: 2
+        customers:
+          name: "Clientes"
+          nav_order: 3
+        appointments:
+          name: "Agendamentos"
+          nav_order: 4
+        services:
+          name: "Serviços"
+          nav_order: 5
+        financial:
+          name: "Financeiro"
+          nav_order: 6
+        products:
+          name: "Estoque e Produtos"
+          nav_order: 7
+        communication:
+          name: "Comunicação"
+          nav_order: 8
+        reports:
+          name: "Relatórios e Métricas"
+          nav_order: 9
+        anamnesis:
+          name: "Anamnese"
+          nav_order: 10
+
+    authentication:
+      collections:
+        users:
+          name: "Usuários"
+        user_logs:
+          name: "Logs de Usuários"
+        application_roles:
+          name: "Papéis e Permissões"
+        user_roles:
+          name: "Relacionamento Usuário-Papéis"
+
+    companies:
+      collections:
+        companies:
+          name: "Cadastro de Empresas"
+        company_page_bio:
+          name: "Página Bio (Linktree)"
+        company_settings:
+          name: "Configurações da Empresa"
+        employees:
+          name: "Funcionários"
+        employee_roles:
+          name: "Papéis dos Funcionários"
+
+    customers:
+      collections:
+        customers:
+          name: "Cadastro de Clientes"
+        customer_notes:
+          name: "Anotações sobre Clientes"
+        customer_appointments:
+          name: "Histórico de Agendamentos"
+
+    appointments:
+      collections:
+        appointments:
+          name: "Agendamentos"
+        waiting_appointments:
+          name: "Lista de Espera"
+        appointment_payments:
+          name: "Pagamentos de Agendamentos"
+        appointment_tags:
+          name: "Tags de Agendamentos"
+        appointment_reminders:
+          name: "Lembretes Automáticos"
+        appointment_availability:
+          name: "Disponibilidade de Horários"
+        appointment_repeat_info:
+          name: "Recorrência de Agendamentos"
+
+    services:
+      collections:
+        services:
+          name: "Serviços"
+        service_categories:
+          name: "Categorias de Serviços"
+        service_packages:
+          name: "Pacotes de Serviços"
+        service_package_items:
+          name: "Itens dos Pacotes"
+
+    financial:
+      collections:
+        accounts_receivables:
+          name: "Contas a Receber"
+        account_receivable_payments:
+          name: "Pagamentos de Contas a Receber"
+        expenses:
+          name: "Despesas"
+        expense_categories:
+          name: "Categorias de Despesas"
+        payments:
+          name: "Histórico de Pagamentos"
+        payment_methods:
+          name: "Métodos de Pagamento"
+        cash_flow_reports:
+          name: "Relatórios de Fluxo de Caixa"
+        commission_payments:
+          name: "Comissões de Funcionários"
+
+    products:
+      collections:
+        products:
+          name: "Produtos"
+        product_categories:
+          name: "Categorias de Produtos"
+        product_suppliers:
+          name: "Fornecedores"
+        product_stock_movements:
+          name: "Movimentação de Estoque"
+        product_purchases:
+          name: "Compras de Produtos"
+        product_purchase_items:
+          name: "Itens Comprados"
+        product_sales:
+          name: "Vendas de Produtos"
+        product_sale_items:
+          name: "Itens Vendidos"
+
+    communication:
+      collections:
+        predefined_messages:
+          name: "Mensagens Pré-Definidas"
+        notifications:
+          name: "Notificações"
+        whatsapp_config:
+          name: "Configuração do WhatsApp"
+        email_templates:
+          name: "Templates de E-mail"
+
+    reports:
+      collections:
+        agenda_reports:
+          name: "Relatórios de Agenda"
+        cash_flow_reports:
+          name: "Relatórios Financeiros"
+        best_customers:
+          name: "Melhores Clientes"
+        total_customer_stats:
+          name: "Estatísticas Gerais de Clientes"
+        daily_performance_reports:
+          name: "Desempenho Diário"
+
+    anamnesis:
+      collections:
+        anamnese_forms:
+          name: "Formulários de Anamnese"
+        anamnese_questions:
+          name: "Perguntas dos Formulários"
+        anamnese_answers:
+          name: "Respostas dos Clientes"
+        anamnese_signatures:
+          name: "Assinaturas Digitais"
