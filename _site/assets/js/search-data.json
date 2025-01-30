@@ -1,788 +1,1005 @@
 {"0": {
     "doc": "Account receivable payments",
+    "title": "Accounts Receivable Payments (Pagamentos de Contas a Receber)",
+    "content": "Tabela que registra os pagamentos efetuados para contas a receber. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único | . | accounts_receivable_id (FK) | UUID | Relacionamento com a conta a receber | . | value | Float | Valor pago | . | installment_total | Int | Número total de parcelas (se houver) | . | payment_method | Enum | Método de pagamento (CASH, CREDIT_CARD, BANK_TRANSFER, etc.) | . | card_flag | String | Bandeira do cartão (se aplicável) | . | due_date | Date | Data do pagamento | . | created_by_id (FK) | UUID | ID do usuário que criou o pagamento | . | updated_by_id (FK) | UUID | ID do usuário que atualizou o pagamento | . | created_at | DateTime | Data de criação do registro | . | updated_at | DateTime | Data de atualização do registro | . | deleted_at | DateTime | Data de exclusão lógica (soft delete) | . ",
+    "url": "/v1/backend/finance/account_receivable_payments.html#accounts-receivable-payments-pagamentos-de-contas-a-receber",
+    
+    "relUrl": "/v1/backend/finance/account_receivable_payments.html#accounts-receivable-payments-pagamentos-de-contas-a-receber"
+  },"1": {
+    "doc": "Account receivable payments",
     "title": "Account receivable payments",
-    "content": "Descrição sobre account_receivable_payments. ",
+    "content": " ",
     "url": "/v1/backend/finance/account_receivable_payments.html",
     
     "relUrl": "/v1/backend/finance/account_receivable_payments.html"
-  },"1": {
+  },"2": {
+    "doc": "Accounts receivables",
+    "title": "Accounts Receivables (Contas a Receber)",
+    "content": "Tabela que armazena os registros de contas a receber da empresa. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único | . | company_id (FK) | UUID | Relacionamento com a empresa | . | customer_id (FK) | UUID | Relacionamento com o cliente | . | date | Date | Data da conta a receber | . | total_before_discount | Float | Valor total antes do desconto | . | total | Float | Valor final da conta a receber | . | total_paid | Float | Valor já pago | . | opened | Boolean | Indica se a conta ainda está em aberto | . | comments | String | Comentários sobre a conta a receber | . | number_of_appointments_allowed | Int | Número de agendamentos permitidos | . | type | Enum | Tipo da conta (NORMAL, PACKAGE) | . | discount | Float | Valor do desconto aplicado | . | discount_in_percentage | Boolean | Indica se o desconto é percentual | . | commission_done | Boolean | Indica se a comissão foi processada | . | created_by_id (FK) | UUID | ID do usuário que criou o registro | . | updated_by_id (FK) | UUID | ID do usuário que atualizou o registro | . | created_at | DateTime | Data de criação do registro | . | updated_at | DateTime | Data de atualização do registro | . | deleted_at | DateTime | Data de exclusão lógica (soft delete) | . ",
+    "url": "/v1/backend/finance/accounts_receivables.html#accounts-receivables-contas-a-receber",
+    
+    "relUrl": "/v1/backend/finance/accounts_receivables.html#accounts-receivables-contas-a-receber"
+  },"3": {
     "doc": "Accounts receivables",
     "title": "Accounts receivables",
-    "content": "Descrição sobre accounts_receivables. ",
+    "content": " ",
     "url": "/v1/backend/finance/accounts_receivables.html",
     
     "relUrl": "/v1/backend/finance/accounts_receivables.html"
-  },"2": {
+  },"4": {
+    "doc": "Accounts receivables",
+    "title": "Accounts Receivable Items (Itens das Contas a Receber)",
+    "content": "Tabela que armazena os serviços ou pacotes adquiridos em uma conta a receber. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único | . | accounts_receivable_id (FK) | UUID | Relacionamento com a conta a receber | . | service_id (FK) | UUID | Relacionamento com um serviço | . | service_package_id (FK) | UUID | Relacionamento com um pacote de serviços | . | quantity | Int | Quantidade do serviço/pacote adquirido | . | price | Float | Preço unitário do serviço/pacote | . | created_by_id (FK) | UUID | ID do usuário que criou o registro | . | updated_by_id (FK) | UUID | ID do usuário que atualizou o registro | . | created_at | DateTime | Data de criação do registro | . | updated_at | DateTime | Data de atualização do registro | . | deleted_at | DateTime | Data de exclusão lógica (soft delete) | . ",
+    "url": "/v1/backend/finance/accounts_receivables_items.html#accounts-receivable-items-itens-das-contas-a-receber",
+    
+    "relUrl": "/v1/backend/finance/accounts_receivables_items.html#accounts-receivable-items-itens-das-contas-a-receber"
+  },"5": {
+    "doc": "Accounts receivables",
+    "title": "Accounts receivables",
+    "content": " ",
+    "url": "/v1/backend/finance/accounts_receivables_items.html",
+    
+    "relUrl": "/v1/backend/finance/accounts_receivables_items.html"
+  },"6": {
     "doc": "Agenda reports",
     "title": "Agenda reports",
     "content": "Descrição sobre agenda_reports. ",
     "url": "/v1/backend/reports/agenda_reports.html",
     
     "relUrl": "/v1/backend/reports/agenda_reports.html"
-  },"3": {
+  },"7": {
     "doc": "Anamnese answers",
     "title": "Anamnese answers",
     "content": "Descrição sobre anamnese_answers. ",
     "url": "/v1/backend/anamnese/anamnese_answers.html",
     
     "relUrl": "/v1/backend/anamnese/anamnese_answers.html"
-  },"4": {
+  },"8": {
     "doc": "Anamnese forms",
     "title": "Anamnese forms",
     "content": "Descrição sobre anamnese_forms. ",
     "url": "/v1/backend/anamnese/anamnese_forms.html",
     
     "relUrl": "/v1/backend/anamnese/anamnese_forms.html"
-  },"5": {
+  },"9": {
     "doc": "Anamnese questions",
     "title": "Anamnese questions",
     "content": "Descrição sobre anamnese_questions. ",
     "url": "/v1/backend/anamnese/anamnese_questions.html",
     
     "relUrl": "/v1/backend/anamnese/anamnese_questions.html"
-  },"6": {
+  },"10": {
     "doc": "Anamnese signatures",
     "title": "Anamnese signatures",
     "content": "Descrição sobre anamnese_signatures. ",
     "url": "/v1/backend/anamnese/anamnese_signatures.html",
     
     "relUrl": "/v1/backend/anamnese/anamnese_signatures.html"
-  },"7": {
+  },"11": {
+    "doc": "Application roles",
+    "title": "Permissions (Permissões)",
+    "content": "Tabela que define as restrições e permissões específicas do sistema. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único | . | value | String | Código da permissão (ex: CANNOT_EDIT_APPOINTMENTS) | . | name | String | Nome da permissão visível no sistema | . | description (nullable) | Text | Explicação detalhada da permissão | . | sorting_order (nullable) | Int | Define a ordem de exibição das permissões | . | internal | Boolean | Indica se é uma permissão interna do sistema | . | professional | Boolean | Indica se a permissão se aplica a profissionais | . | active | Boolean | Indica se a permissão está ativa | . | created_at | DateTime | Data de criação do registro | . | updated_at | DateTime | Data de atualização do registro | . ",
+    "url": "/v1/backend/authentication/application_permissions.html#permissions-permiss%C3%B5es",
+    
+    "relUrl": "/v1/backend/authentication/application_permissions.html#permissions-permissões"
+  },"12": {
     "doc": "Application roles",
     "title": "Application roles",
-    "content": "Descrição sobre application_roles. ",
-    "url": "/v1/backend/authentication/application_roles.html",
+    "content": " ",
+    "url": "/v1/backend/authentication/application_permissions.html",
     
-    "relUrl": "/v1/backend/authentication/application_roles.html"
-  },"8": {
+    "relUrl": "/v1/backend/authentication/application_permissions.html"
+  },"13": {
+    "doc": "Appointment availability",
+    "title": "Appointment Availability (Disponibilidade de Agendamentos)",
+    "content": "Tabela que gerencia a disponibilidade para agendamentos. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único | . | date | DateTime | Data de disponibilidade | . | start_time | Time | Horário de início | . | end_time | Time | Horário de término | . | employee_id (FK) | UUID | Identificador do profissional disponível | . | company_id (FK) | UUID | Identificador da empresa | . | created_at | DateTime | Data de criação | . | updated_at | DateTime | Última atualização | . ",
+    "url": "/v1/backend/appointments/appointment_availability.html#appointment-availability-disponibilidade-de-agendamentos",
+    
+    "relUrl": "/v1/backend/appointments/appointment_availability.html#appointment-availability-disponibilidade-de-agendamentos"
+  },"14": {
     "doc": "Appointment availability",
     "title": "Appointment availability",
-    "content": "Descrição sobre appointment_availability. ",
+    "content": " ",
     "url": "/v1/backend/appointments/appointment_availability.html",
     
     "relUrl": "/v1/backend/appointments/appointment_availability.html"
-  },"9": {
+  },"15": {
     "doc": "Appointment payments",
     "title": "Appointment payments",
     "content": "Descrição sobre appointment_payments. ",
     "url": "/v1/backend/appointments/appointment_payments.html",
     
     "relUrl": "/v1/backend/appointments/appointment_payments.html"
-  },"10": {
+  },"16": {
     "doc": "Appointment reminders",
     "title": "Appointment reminders",
     "content": "Descrição sobre appointment_reminders. ",
     "url": "/v1/backend/appointments/appointment_reminders.html",
     
     "relUrl": "/v1/backend/appointments/appointment_reminders.html"
-  },"11": {
+  },"17": {
+    "doc": "Appointment repeat info",
+    "title": "Appointment Repeat Info (Repetição de Agendamentos)",
+    "content": "Tabela que gerencia a repetição dos agendamentos. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único | . | appointment_id (FK) | UUID | Identificador do agendamento | . | repeat_style | Enum | Estilo de repetição (DAILY, WEEKLY, etc.) | . | repeat_interval | Int | Intervalo de repetição (exemplo: 15 dias) | . | number_of_occurrences | Int | Número de repetições | . | end_date | DateTime | Data final da repetição | . | days_of_week | JSON | Dias da semana para repetição | . | created_at | DateTime | Data de criação | . | updated_at | DateTime | Última atualização | . ",
+    "url": "/v1/backend/appointments/appointment_repeat_info.html#appointment-repeat-info-repeti%C3%A7%C3%A3o-de-agendamentos",
+    
+    "relUrl": "/v1/backend/appointments/appointment_repeat_info.html#appointment-repeat-info-repetição-de-agendamentos"
+  },"18": {
     "doc": "Appointment repeat info",
     "title": "Appointment repeat info",
-    "content": "Descrição sobre appointment_repeat_info. ",
+    "content": " ",
     "url": "/v1/backend/appointments/appointment_repeat_info.html",
     
     "relUrl": "/v1/backend/appointments/appointment_repeat_info.html"
-  },"12": {
+  },"19": {
     "doc": "Appointment tags",
     "title": "Appointment tags",
     "content": "Descrição sobre appointment_tags. ",
     "url": "/v1/backend/appointments/appointment_tags.html",
     
     "relUrl": "/v1/backend/appointments/appointment_tags.html"
-  },"13": {
+  },"20": {
+    "doc": "Appointments",
+    "title": "Appointments (Agendamentos)",
+    "content": "Tabela que gerencia os agendamentos no sistema. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único | . | company_id (FK) | UUID | Identificador da empresa | . | user_id (FK) | UUID | Identificador do usuário responsável | . | customer_id (FK) | UUID | Identificador do cliente | . | service_id (FK) | UUID | Identificador do serviço agendado | . | date | DateTime | Data do agendamento | . | start_time | Time | Horário de início | . | end_time | Time | Horário de término | . | duration | Int | Duração do serviço (em minutos) | . | price | Float | Preço do serviço agendado | . | total_paid | Float | Valor total pago pelo cliente | . | payment_method | Enum | Método de pagamento (CASH, CARD, etc.) | . | tag | Enum | Status do agendamento (CANCELED, CONFIRMED, etc.) | . | non_paid | Boolean | Indica se o pagamento não foi realizado | . | accounts_receivable_id (FK) | UUID | Conta a receber vinculada (opcional) | . | commission_rate | Float | Percentual de comissão associado | . | color_id (FK) | UUID | Cor associada ao serviço | . | discount | Float | Valor do desconto aplicado | . | discount_in_percentage | Boolean | Indica se o desconto é percentual | . | total_before_discount | Float | Valor total antes do desconto | . | installment_total | Float | Valor total das parcelas | . | card_flag | Enum | Bandeira do cartão de crédito | . | commission_done | Boolean | Indica se a comissão já foi paga | . | created_at | DateTime | Data de criação | . | updated_at | DateTime | Última atualização | . | deleted | Boolean | Indica se o agendamento foi excluído | . | deleted_at | DateTime | Data de exclusão lógica | . ",
+    "url": "/v1/backend/appointments/appointments.html#appointments-agendamentos",
+    
+    "relUrl": "/v1/backend/appointments/appointments.html#appointments-agendamentos"
+  },"21": {
     "doc": "Appointments",
     "title": "Appointments",
-    "content": "Descrição sobre appointments. ",
+    "content": " ",
     "url": "/v1/backend/appointments/appointments.html",
     
     "relUrl": "/v1/backend/appointments/appointments.html"
-  },"14": {
+  },"22": {
     "doc": "Autenticação",
     "title": "Autenticação",
     "content": "Como funciona o login e autenticação. ",
     "url": "/v1/workflows/authentication.html",
     
     "relUrl": "/v1/workflows/authentication.html"
-  },"15": {
+  },"23": {
     "doc": "Best customers",
     "title": "Best customers",
     "content": "Descrição sobre best_customers. ",
     "url": "/v1/backend/reports/best_customers.html",
     
     "relUrl": "/v1/backend/reports/best_customers.html"
-  },"16": {
-    "doc": "Cash flow reports",
-    "title": "Cash flow reports",
-    "content": "Descrição sobre cash_flow_reports. ",
-    "url": "/v1/backend/finance/cash_flow_reports.html",
-    
-    "relUrl": "/v1/backend/finance/cash_flow_reports.html"
-  },"17": {
+  },"24": {
     "doc": "Cash flow reports",
     "title": "Cash flow reports",
     "content": "Descrição sobre cash_flow_reports. ",
     "url": "/v1/backend/reports/cash_flow_reports.html",
     
     "relUrl": "/v1/backend/reports/cash_flow_reports.html"
-  },"18": {
+  },"25": {
+    "doc": "Cash flow reports",
+    "title": "Cash flow reports",
+    "content": "Descrição sobre cash_flow_reports. ",
+    "url": "/v1/backend/finance/cash_flow_reports.html",
+    
+    "relUrl": "/v1/backend/finance/cash_flow_reports.html"
+  },"26": {
     "doc": "Changelog",
     "title": "Changelog",
     "content": "Histórico de mudanças na API. ",
     "url": "/v1/references/changelog.html",
     
     "relUrl": "/v1/references/changelog.html"
-  },"19": {
+  },"27": {
+    "doc": "Commission payments",
+    "title": "Commission Payments (Pagamentos de Comissão)",
+    "content": "Tabela que registra os pagamentos de comissão para funcionários. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único | . | employee_id (FK) | UUID | Relacionamento com o funcionário | . | start_date | Date | Data inicial do cálculo da comissão | . | end_date | Date | Data final do cálculo da comissão | . | gross_total | Float | Valor total bruto da comissão | . | number_of_appointments | Int | Número de agendamentos relacionados à comissão | . | created_at | DateTime | Data de criação do registro | . | updated_at | DateTime | Data de atualização do registro | . ",
+    "url": "/v1/backend/finance/commission_payments.html#commission-payments-pagamentos-de-comiss%C3%A3o",
+    
+    "relUrl": "/v1/backend/finance/commission_payments.html#commission-payments-pagamentos-de-comissão"
+  },"28": {
     "doc": "Commission payments",
     "title": "Commission payments",
-    "content": "Descrição sobre commission_payments. ",
+    "content": " ",
     "url": "/v1/backend/finance/commission_payments.html",
     
     "relUrl": "/v1/backend/finance/commission_payments.html"
-  },"20": {
+  },"29": {
+    "doc": "Companies",
+    "title": "Companies (Empresas)",
+    "content": "Tabela que armazena as informações das empresas cadastradas no sistema. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único | . | name | String | Nome da empresa | . | email | String | E-mail de contato | . | allow_multiple_appointments_per_hour | Boolean | Permite múltiplos agendamentos por hora | . | allow_overlapping_appointments | Boolean | Permite agendamentos sobrepostos | . | automatic_appointment_charges | Boolean | Cobrança automática de agendamentos | . | default_payment_method | Enum | Método de pagamento padrão (CASH, CARD, etc.) | . | enable_color_by_tag | Boolean | Habilita diferenciação por cor nos agendamentos | . | logo_url | String | URL do logo da empresa | . | locale | Enum | Localização padrão da empresa (PT_BR, EN_US, etc.) | . | target_year | Int | Ano de referência da empresa | . | min_appointment_date | DateTime | Data mínima permitida para agendamentos | . | company_page_bio_avatar_url | String | URL da imagem de perfil da empresa | . | total_appointments | Int | Número total de agendamentos | . | number_of_distinct_customer_ids | Int | Número de clientes únicos atendidos | . | best_services | JSON | Lista de serviços mais agendados | . | total_duration | Int | Tempo total de atendimentos prestados (em minutos) | . | deleted | Boolean | Indica se a empresa foi excluída | . | deleted_at | DateTime | Data de exclusão lógica | . | created_at | DateTime | Data de criação | . | updated_at | DateTime | Última atualização | . ",
+    "url": "/v1/backend/companies/companies.html#companies-empresas",
+    
+    "relUrl": "/v1/backend/companies/companies.html#companies-empresas"
+  },"30": {
     "doc": "Companies",
     "title": "Companies",
-    "content": "Descrição sobre companies. ",
+    "content": " ",
     "url": "/v1/backend/companies/companies.html",
     
     "relUrl": "/v1/backend/companies/companies.html"
-  },"21": {
+  },"31": {
     "doc": "Company page bio",
     "title": "Company page bio",
     "content": "Descrição sobre company_page_bio. ",
     "url": "/v1/backend/companies/company_page_bio.html",
     
     "relUrl": "/v1/backend/companies/company_page_bio.html"
-  },"22": {
+  },"32": {
+    "doc": "Company settings",
+    "title": "Company Online Scheduling Settings (Configurações de Agendamento Online da Empresa)",
+    "content": "Tabela que gerencia as configurações de agendamento online dos serviços de uma empresa. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único | . | company_id (FK) | UUID | Identificador da empresa | . | service_id (FK) | UUID | Identificador do serviço configurado para agendamento online | . | online_scheduling_enabled | Boolean | Indica se o serviço pode ser agendado online | . | online_scheduling_price_display | Enum | Tipo de exibição do preço no agendamento online (FIXED, VARIABLE, etc.) | . ",
+    "url": "/v1/backend/companies/company_settings.html#company-online-scheduling-settings-configura%C3%A7%C3%B5es-de-agendamento-online-da-empresa",
+    
+    "relUrl": "/v1/backend/companies/company_settings.html#company-online-scheduling-settings-configurações-de-agendamento-online-da-empresa"
+  },"33": {
     "doc": "Company settings",
     "title": "Company settings",
-    "content": "Descrição sobre company_settings. ",
+    "content": " ",
     "url": "/v1/backend/companies/company_settings.html",
     
     "relUrl": "/v1/backend/companies/company_settings.html"
-  },"23": {
+  },"34": {
     "doc": "Customer appointments",
     "title": "Customer appointments",
     "content": "Descrição sobre customer_appointments. ",
     "url": "/v1/backend/customers/customer_appointments.html",
     
     "relUrl": "/v1/backend/customers/customer_appointments.html"
-  },"24": {
+  },"35": {
     "doc": "Customer notes",
     "title": "Customer notes",
     "content": "Descrição sobre customer_notes. ",
     "url": "/v1/backend/customers/customer_notes.html",
     
     "relUrl": "/v1/backend/customers/customer_notes.html"
-  },"25": {
+  },"36": {
+    "doc": "Customers",
+    "title": "Customers (Clientes)",
+    "content": "Tabela que armazena os dados dos clientes. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único | . | company_id (FK) | UUID | Identificador da empresa | . | created_by_id (FK) | UUID | Usuário que criou o cliente | . | updated_by_id (FK) | UUID | Última alteração feita por | . | name | String | Nome do cliente | . | phone1 | String | Telefone principal | . | phone2 | String | Telefone secundário (opcional) | . | address | String | Endereço do cliente | . | cpf | String | CPF do cliente (opcional) | . | cnpj | String | CNPJ do cliente (opcional) | . | birth_date | DateTime | Data de nascimento | . | email | String | E-mail do cliente (opcional) | . | noted | Boolean | Indica se há observação importante | . | deleted | Boolean | Indica exclusão lógica | . | deleted_at | DateTime | Data de exclusão lógica | . | created_at | DateTime | Data de criação | . | updated_at | DateTime | Última atualização | . ",
+    "url": "/v1/backend/customers/customers.html#customers-clientes",
+    
+    "relUrl": "/v1/backend/customers/customers.html#customers-clientes"
+  },"37": {
     "doc": "Customers",
     "title": "Customers",
-    "content": "Descrição sobre customers. ",
+    "content": " ",
     "url": "/v1/backend/customers/customers.html",
     
     "relUrl": "/v1/backend/customers/customers.html"
-  },"26": {
+  },"38": {
     "doc": "Daily performance reports",
     "title": "Daily performance reports",
     "content": "Descrição sobre daily_performance_reports. ",
     "url": "/v1/backend/reports/daily_performance_reports.html",
     
     "relUrl": "/v1/backend/reports/daily_performance_reports.html"
-  },"27": {
+  },"39": {
     "doc": "Email templates",
     "title": "Email templates",
     "content": "Descrição sobre email_templates. ",
     "url": "/v1/backend/communication/email_templates.html",
     
     "relUrl": "/v1/backend/communication/email_templates.html"
-  },"28": {
+  },"40": {
     "doc": "Employee roles",
     "title": "Employee roles",
     "content": "Descrição sobre employee_roles. ",
     "url": "/v1/backend/companies/employee_roles.html",
     
     "relUrl": "/v1/backend/companies/employee_roles.html"
-  },"29": {
+  },"41": {
+    "doc": "Employees",
+    "title": "Employees (Funcionários)",
+    "content": "Tabela que armazena os dados dos funcionários da empresa. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único | . | company_id (FK) | UUID | Identificador da empresa | . | name | String | Nome do funcionário | . | cpf | String | CPF do funcionário (opcional) | . | cnpj | String | CNPJ do funcionário (opcional) | . | email | String | E-mail do funcionário (opcional) | . | temp_password | String | Senha temporária (opcional) | . | professional | Boolean | Indica se é um profissional da beleza | . | commission | Float | Percentual de comissão (ex: 1 = 100%) | . | color_id | UUID | Identificador da cor associada | . | enabled | Boolean | Funcionário ativo | . | roles | JSON | Funções atribuídas | . | master | Boolean | Acesso administrativo | . | revenue_excluded | Boolean | Receita excluída do financeiro | . | without_login_credentials | Boolean | Indica se tem login no sistema | . | is_cnpj | Boolean | Indica se o funcionário usa CNPJ | . | role_ids | JSON | Lista de IDs de papéis vinculados | . | deleted | Boolean | Indica exclusão lógica | . | deleted_at | DateTime | Data de exclusão lógica | . | created_at | DateTime | Data de criação | . | updated_at | DateTime | Última atualização | . ",
+    "url": "/v1/backend/companies/employees.html#employees-funcion%C3%A1rios",
+    
+    "relUrl": "/v1/backend/companies/employees.html#employees-funcionários"
+  },"42": {
     "doc": "Employees",
     "title": "Employees",
-    "content": "Descrição sobre employees. ",
+    "content": " ",
     "url": "/v1/backend/companies/employees.html",
     
     "relUrl": "/v1/backend/companies/employees.html"
-  },"30": {
+  },"43": {
+    "doc": "Expense categories",
+    "title": "Expense Categories (Categorias de Despesas)",
+    "content": "Tabela que armazena as categorias de despesas de uma empresa. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único | . | company_id (FK) | UUID | Relacionamento com a empresa | . | name | String | Nome da categoria de despesa | . | description (nullable) | Text | Descrição da categoria | . | category_group_id (nullable) | UUID | Referência a um agrupamento de categorias | . | category_group_name (nullable) | String | Nome do grupo da categoria | . | deleted | Boolean | Indica se a categoria foi excluída | . | deleted_at (nullable) | DateTime | Data de exclusão lógica (soft delete) | . | deleted_by_id (FK) | UUID | ID do usuário que excluiu a categoria | . | created_by_id (FK) | UUID | ID do usuário que criou a categoria | . | created_at | DateTime | Data de criação do registro | . | updated_by_id (FK) | UUID | ID do usuário que atualizou a categoria | . | updated_at | DateTime | Data de atualização do registro | . ",
+    "url": "/v1/backend/finance/expense_categories.html#expense-categories-categorias-de-despesas",
+    
+    "relUrl": "/v1/backend/finance/expense_categories.html#expense-categories-categorias-de-despesas"
+  },"44": {
     "doc": "Expense categories",
     "title": "Expense categories",
-    "content": "Descrição sobre expense_categories. ",
+    "content": " ",
     "url": "/v1/backend/finance/expense_categories.html",
     
     "relUrl": "/v1/backend/finance/expense_categories.html"
-  },"31": {
+  },"45": {
+    "doc": "Expenses",
+    "title": "Expenses (Despesas)",
+    "content": "Tabela que gerencia as despesas de uma empresa. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único | . | company_id (FK) | UUID | Identificador da empresa | . | employee_id (FK, opcional) | UUID | Identificador do funcionário relacionado | . | name | String | Nome da despesa | . | value | Float | Valor da despesa | . | date | Date | Data da despesa | . | category | Enum | Categoria da despesa (ADVANCE_MONEY, COSTS, etc.) | . | expense_category_id (FK, opcional) | UUID | Identificador da categoria da despesa | . | type | Enum | Tipo de despesa (REGULAR, INSTALLMENT) | . | start_date (nullable) | Date | Data de início (se for parcelada) | . | end_date (nullable) | Date | Data de término (se for parcelada) | . | installment_number (nullable) | Int | Número da parcela (se parcelada) | . | installment_total (nullable) | Int | Total de parcelas (se parcelada) | . | total_value (nullable) | Float | Valor total da despesa parcelada | . | parent_expense_id (FK, opcional) | UUID | Relacionamento com outra despesa (se for parte de um conjunto) | . | paid | Boolean | Indica se a despesa já foi paga | . | attachment_source_type (nullable) | String | Tipo da fonte do anexo | . | attachment_source_object_id (nullable) | UUID | Identificador do objeto do anexo | . | deleted | Boolean | Indica se a despesa foi excluída | . | deleted_at (nullable) | DateTime | Data de exclusão lógica (soft delete) | . | deleted_by_id (FK, opcional) | UUID | ID do usuário que excluiu o registro | . | created_by_id (FK) | UUID | ID do usuário que criou a despesa | . | created_at | DateTime | Data de criação do registro | . | updated_by_id (FK) | UUID | ID do usuário que atualizou a despesa | . | updated_at | DateTime | Data de atualização do registro | . ",
+    "url": "/v1/backend/finance/expenses.html#expenses-despesas",
+    
+    "relUrl": "/v1/backend/finance/expenses.html#expenses-despesas"
+  },"46": {
     "doc": "Expenses",
     "title": "Expenses",
-    "content": "Descrição sobre expenses. ",
+    "content": " ",
     "url": "/v1/backend/finance/expenses.html",
     
     "relUrl": "/v1/backend/finance/expenses.html"
-  },"32": {
+  },"47": {
     "doc": "FAQ",
     "title": "Perguntas Frequentes",
     "content": "Respostas para dúvidas comuns. ",
     "url": "/v1/references/faq.html#perguntas-frequentes",
     
     "relUrl": "/v1/references/faq.html#perguntas-frequentes"
-  },"33": {
+  },"48": {
     "doc": "FAQ",
     "title": "FAQ",
     "content": " ",
     "url": "/v1/references/faq.html",
     
     "relUrl": "/v1/references/faq.html"
-  },"34": {
+  },"49": {
     "doc": "Guia Inicial",
     "title": "🏁 Guia Inicial",
     "content": "Bem-vindo ao Agenda Power! Este documento apresenta um guia rápido para configurar e começar a utilizar o sistema. ",
     "url": "/v1/getting-started.html#-guia-inicial",
     
     "relUrl": "/v1/getting-started.html#-guia-inicial"
-  },"35": {
+  },"50": {
     "doc": "Guia Inicial",
     "title": "📝 Requisitos",
     "content": "Antes de começar, certifique-se de que possui os seguintes requisitos instalados: . | Node.js (versão 18 ou superior) | Yarn (ou outro gerenciador de pacotes) | PostgreSQL (para ambiente local) | Docker (opcional para ambiente isolado) | . ",
     "url": "/v1/getting-started.html#-requisitos",
     
     "relUrl": "/v1/getting-started.html#-requisitos"
-  },"36": {
+  },"51": {
     "doc": "Guia Inicial",
     "title": "📌 Como Rodar o Projeto",
     "content": "1️⃣ Clone o repositório . git clone git@github.com:seu-repo.git cd seu-projeto . 2️⃣ Instale as dependências . yarn install . 3️⃣ Configurar as variáveis de ambiente . Crie um arquivo .env baseado no .env.example e configure as credenciais do banco e integrações. 4️⃣ Executar o banco de dados (Docker) . docker-compose up -d . 5️⃣ Rodar as migrações do banco . yarn prisma migrate dev . 6️⃣ Iniciar o servidor . yarn start:dev . Agora o projeto estará rodando localmente em http://localhost:3000. ",
     "url": "/v1/getting-started.html#-como-rodar-o-projeto",
     
     "relUrl": "/v1/getting-started.html#-como-rodar-o-projeto"
-  },"37": {
+  },"52": {
     "doc": "Guia Inicial",
     "title": "📂 Visão Geral do Backend",
     "content": "O backend do Agenda Power é construído em NestJS com Prisma para o gerenciamento do banco de dados. A API segue uma abordagem modular para facilitar a escalabilidade. ",
     "url": "/v1/getting-started.html#-vis%C3%A3o-geral-do-backend",
     
     "relUrl": "/v1/getting-started.html#-visão-geral-do-backend"
-  },"38": {
+  },"53": {
     "doc": "Guia Inicial",
     "title": "🚀 Tecnologias Utilizadas",
     "content": ". | Framework: NestJS | Banco de Dados: PostgreSQL com Prisma ORM | Autenticação: JWT + OAuth (Google &amp; Apple) | Mensageria: Notificações via WhatsApp e Email | Armazenamento: AWS S3 para uploads | CI/CD: GitHub Actions para automação de deploys | . ",
     "url": "/v1/getting-started.html#-tecnologias-utilizadas",
     
     "relUrl": "/v1/getting-started.html#-tecnologias-utilizadas"
-  },"39": {
+  },"54": {
     "doc": "Guia Inicial",
     "title": "🛠️ Arquitetura do Projeto",
     "content": "A estrutura do backend é baseada em módulos para melhor separação de responsabilidades: . /src |-- modules/ # Módulos principais |-- auth/ # Autenticação e controle de acesso |-- users/ # Gerenciamento de usuários |-- appointments/ # Agendamentos |-- payments/ # Pagamentos e transações |-- notifications/ # Notificações automáticas |-- common/ # Componentes compartilhados |-- decorators/ # Decorators reutilizáveis |-- guards/ # Proteção de rotas e autenticação |-- filters/ # Manipulação de exceções |-- utils/ # Funções utilitárias |-- prisma/ # Configuração do banco de dados |-- schema.prisma # Modelo de dados Prisma |-- main.ts # Arquivo principal do servidor . ",
     "url": "/v1/getting-started.html#%EF%B8%8F-arquitetura-do-projeto",
     
     "relUrl": "/v1/getting-started.html#️-arquitetura-do-projeto"
-  },"40": {
+  },"55": {
     "doc": "Guia Inicial",
     "title": "🏢 Módulos do Sistema",
     "content": "Cada módulo representa uma funcionalidade principal do sistema. ",
     "url": "/v1/getting-started.html#-m%C3%B3dulos-do-sistema",
     
     "relUrl": "/v1/getting-started.html#-módulos-do-sistema"
-  },"41": {
+  },"56": {
     "doc": "Guia Inicial",
     "title": "🔒 Autenticação",
     "content": ". | Login via Google e Apple | Tokens JWT com Refresh Token | Controle de permissões por roles | . ",
     "url": "/v1/getting-started.html#-autentica%C3%A7%C3%A3o",
     
     "relUrl": "/v1/getting-started.html#-autenticação"
-  },"42": {
+  },"57": {
     "doc": "Guia Inicial",
     "title": "🗓 Agendamentos",
     "content": ". | Criar, editar e cancelar agendamentos | Horários disponíveis e gestão de bloqueios | Agendamentos recorrentes | . ",
     "url": "/v1/getting-started.html#-agendamentos",
     
     "relUrl": "/v1/getting-started.html#-agendamentos"
-  },"43": {
+  },"58": {
     "doc": "Guia Inicial",
     "title": "💸 Financeiro",
     "content": ". | Contas a pagar e receber | Métodos de pagamento (PIX, Cartão, Boleto) | Relatórios financeiros | . ",
     "url": "/v1/getting-started.html#-financeiro",
     
     "relUrl": "/v1/getting-started.html#-financeiro"
-  },"44": {
+  },"59": {
     "doc": "Guia Inicial",
     "title": "💼 Produtos &amp; Serviços",
     "content": ". | Cadastro de serviços | Controle de estoque de produtos | Pacotes de serviços | . ",
     "url": "/v1/getting-started.html#-produtos--servi%C3%A7os",
     
     "relUrl": "/v1/getting-started.html#-produtos--serviços"
-  },"45": {
+  },"60": {
     "doc": "Guia Inicial",
     "title": "📢 Notificações",
     "content": ". | WhatsApp e E-mail automatizados | Notificações de lembrete | . ",
     "url": "/v1/getting-started.html#-notifica%C3%A7%C3%B5es",
     
     "relUrl": "/v1/getting-started.html#-notificações"
-  },"46": {
+  },"61": {
     "doc": "Guia Inicial",
     "title": "📊 API &amp; Endpoints",
     "content": "Estrutura RESTful seguindo boas práticas. ",
     "url": "/v1/getting-started.html#-api--endpoints",
     
     "relUrl": "/v1/getting-started.html#-api--endpoints"
-  },"47": {
+  },"62": {
     "doc": "Guia Inicial",
     "title": "Exemplo de Endpoints",
     "content": "| Método | Rota | Descrição | . | POST | /auth/login | Autentica o usuário | . | GET | /users/me | Retorna dados do usuário logado | . | GET | /appointments | Lista todos os agendamentos | . | POST | /payments | Realiza um pagamento | . Para mais detalhes, consulte a documentação da API Swagger (Em construção). ",
     "url": "/v1/getting-started.html#exemplo-de-endpoints",
     
     "relUrl": "/v1/getting-started.html#exemplo-de-endpoints"
-  },"48": {
+  },"63": {
     "doc": "Guia Inicial",
     "title": "🛍️ Fluxos do Sistema",
     "content": " ",
     "url": "/v1/getting-started.html#%EF%B8%8F-fluxos-do-sistema",
     
     "relUrl": "/v1/getting-started.html#️-fluxos-do-sistema"
-  },"49": {
+  },"64": {
     "doc": "Guia Inicial",
     "title": "Fluxo de Agendamento",
     "content": ". | Usuário escolhe serviço e profissional | Consulta horários disponíveis | Confirma agendamento | Notificação enviada por WhatsApp | . ",
     "url": "/v1/getting-started.html#fluxo-de-agendamento",
     
     "relUrl": "/v1/getting-started.html#fluxo-de-agendamento"
-  },"50": {
+  },"65": {
     "doc": "Guia Inicial",
     "title": "Fluxo de Pagamento",
     "content": ". | Usuário seleciona método de pagamento | API processa pagamento e confirma status | Atualização no financeiro e envio de recibo | . ",
     "url": "/v1/getting-started.html#fluxo-de-pagamento",
     
     "relUrl": "/v1/getting-started.html#fluxo-de-pagamento"
-  },"51": {
+  },"66": {
     "doc": "Guia Inicial",
     "title": "🔗 Integrações",
     "content": ". | WhatsApp API → Envio de mensagens automáticas | Gateway de Pagamento → Processamento de transações | Google &amp; Apple Login → Autenticação simplificada | . ",
     "url": "/v1/getting-started.html#-integra%C3%A7%C3%B5es",
     
     "relUrl": "/v1/getting-started.html#-integrações"
-  },"52": {
+  },"67": {
     "doc": "Guia Inicial",
     "title": "📜 Regras de Negócio",
     "content": ". | Cancelamentos devem ocorrer com até 24h de antecedência | Agendamentos só podem ser criados em horários disponíveis | Pagamentos devem ser registrados imediatamente após a transação | . ",
     "url": "/v1/getting-started.html#-regras-de-neg%C3%B3cio",
     
     "relUrl": "/v1/getting-started.html#-regras-de-negócio"
-  },"53": {
+  },"68": {
     "doc": "Guia Inicial",
     "title": "🎯 Atualizações e Manutenção",
     "content": "Este documento será atualizado conforme novas funcionalidades forem implementadas. ",
     "url": "/v1/getting-started.html#-atualiza%C3%A7%C3%B5es-e-manuten%C3%A7%C3%A3o",
     
     "relUrl": "/v1/getting-started.html#-atualizações-e-manutenção"
-  },"54": {
+  },"69": {
     "doc": "Guia Inicial",
     "title": "Guia Inicial",
     "content": " ",
     "url": "/v1/getting-started.html",
     
     "relUrl": "/v1/getting-started.html"
-  },"55": {
+  },"70": {
     "doc": "Communication",
     "title": "Módulo: Communication",
     "content": "Documentação relacionada ao módulo communication. ",
     "url": "/v1/backend/communication/#m%C3%B3dulo-communication",
     
     "relUrl": "/v1/backend/communication/#módulo-communication"
-  },"56": {
+  },"71": {
     "doc": "Communication",
     "title": "Communication",
     "content": " ",
     "url": "/v1/backend/communication/",
     
     "relUrl": "/v1/backend/communication/"
-  },"57": {
+  },"72": {
     "doc": "Customers",
     "title": "Módulo: Customers",
     "content": "Documentação relacionada ao módulo customers. ",
     "url": "/v1/backend/customers/#m%C3%B3dulo-customers",
     
     "relUrl": "/v1/backend/customers/#módulo-customers"
-  },"58": {
+  },"73": {
     "doc": "Customers",
     "title": "Customers",
     "content": " ",
     "url": "/v1/backend/customers/",
     
     "relUrl": "/v1/backend/customers/"
-  },"59": {
+  },"74": {
     "doc": "Products",
-    "title": "Módulo: Products",
-    "content": "Documentação relacionada ao módulo products. ",
-    "url": "/v1/backend/products/#m%C3%B3dulo-products",
+    "title": "Products (Produtos)",
+    "content": "Tabela que armazena os produtos vendidos ou utilizados no sistema. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único do produto | . | company_id (FK) | UUID | Identificador da empresa | . | created_by_id (FK) | UUID | Usuário que criou o produto | . | updated_by_id (FK) | UUID | Usuário que fez a última atualização | . | name | String | Nome do produto | . | sale_price | Float | Preço de venda do produto | . | product_category_id (FK) | UUID | Categoria do produto | . | desired_stock_amount | Int | Quantidade desejada em estoque | . | image_url | String | URL da imagem do produto (opcional) | . | deleted | Boolean | Indica se o produto foi excluído (soft delete) | . | deleted_at | DateTime | Data de exclusão lógica (opcional) | . | created_at | DateTime | Data de criação | . | updated_at | DateTime | Última atualização | . ",
+    "url": "/v1/backend/products/#products-produtos",
     
-    "relUrl": "/v1/backend/products/#módulo-products"
-  },"60": {
+    "relUrl": "/v1/backend/products/#products-produtos"
+  },"75": {
     "doc": "Products",
     "title": "Products",
     "content": " ",
     "url": "/v1/backend/products/",
     
     "relUrl": "/v1/backend/products/"
-  },"61": {
+  },"76": {
     "doc": "Anamnese",
     "title": "Módulo: Anamnese",
     "content": "Documentação relacionada ao módulo anamnese. ",
     "url": "/v1/backend/anamnese/#m%C3%B3dulo-anamnese",
     
     "relUrl": "/v1/backend/anamnese/#módulo-anamnese"
-  },"62": {
+  },"77": {
     "doc": "Anamnese",
     "title": "Anamnese",
     "content": " ",
     "url": "/v1/backend/anamnese/",
     
     "relUrl": "/v1/backend/anamnese/"
-  },"63": {
+  },"78": {
     "doc": "Appointments",
     "title": "Módulo: Appointments",
     "content": "Documentação relacionada ao módulo appointments. ",
     "url": "/v1/backend/appointments/#m%C3%B3dulo-appointments",
     
     "relUrl": "/v1/backend/appointments/#módulo-appointments"
-  },"64": {
+  },"79": {
     "doc": "Appointments",
     "title": "Appointments",
     "content": " ",
     "url": "/v1/backend/appointments/",
     
     "relUrl": "/v1/backend/appointments/"
-  },"65": {
+  },"80": {
     "doc": "Finance",
     "title": "Módulo: Finance",
     "content": "Documentação relacionada ao módulo finance. ",
     "url": "/v1/backend/finance/#m%C3%B3dulo-finance",
     
     "relUrl": "/v1/backend/finance/#módulo-finance"
-  },"66": {
+  },"81": {
     "doc": "Finance",
     "title": "Finance",
     "content": " ",
     "url": "/v1/backend/finance/",
     
     "relUrl": "/v1/backend/finance/"
-  },"67": {
+  },"82": {
     "doc": "Authentication",
     "title": "Módulo: Authentication",
     "content": "Documentação relacionada ao módulo authentication. ",
     "url": "/v1/backend/authentication/#m%C3%B3dulo-authentication",
     
     "relUrl": "/v1/backend/authentication/#módulo-authentication"
-  },"68": {
+  },"83": {
     "doc": "Authentication",
     "title": "Authentication",
     "content": " ",
     "url": "/v1/backend/authentication/",
     
     "relUrl": "/v1/backend/authentication/"
-  },"69": {
+  },"84": {
     "doc": "Companies",
     "title": "Módulo: Companies",
     "content": "Documentação relacionada ao módulo companies. ",
     "url": "/v1/backend/companies/#m%C3%B3dulo-companies",
     
     "relUrl": "/v1/backend/companies/#módulo-companies"
-  },"70": {
+  },"85": {
     "doc": "Companies",
     "title": "Companies",
     "content": " ",
     "url": "/v1/backend/companies/",
     
     "relUrl": "/v1/backend/companies/"
-  },"71": {
+  },"86": {
     "doc": "Services",
-    "title": "Módulo: Services",
-    "content": "Documentação relacionada ao módulo services. ",
-    "url": "/v1/backend/services/#m%C3%B3dulo-services",
+    "title": "Services (Serviços)",
+    "content": "Tabela que gerencia os serviços oferecidos pelas empresas. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único | . | company_id (FK) | UUID | Identificador da empresa | . | created_by_id (FK) | UUID | Usuário que criou o serviço | . | updated_by_id (FK) | UUID | Usuário que fez a última atualização | . | name | String | Nome do serviço | . | duration | Int | Duração do serviço (em minutos) | . | price | Float | Preço do serviço | . | price_cost | Float | Custo do serviço | . | color_id (FK) | UUID | Identificador da cor associada | . | service_category_id (FK) | UUID | Categoria do serviço | . | description | String | Descrição do serviço | . | promo_price_description | String | Descrição da promoção | . | image_url | String | URL da imagem do serviço | . | online_scheduling_enabled | Boolean | Disponível para agendamento online | . | deleted | Boolean | Indica se o serviço foi excluído | . | deleted_at | DateTime | Data de exclusão lógica | . | created_at | DateTime | Data de criação | . | updated_at | DateTime | Última atualização | . ",
+    "url": "/v1/backend/services/#services-servi%C3%A7os",
     
-    "relUrl": "/v1/backend/services/#módulo-services"
-  },"72": {
+    "relUrl": "/v1/backend/services/#services-serviços"
+  },"87": {
     "doc": "Services",
     "title": "Services",
     "content": " ",
     "url": "/v1/backend/services/",
     
     "relUrl": "/v1/backend/services/"
-  },"73": {
+  },"88": {
     "doc": "Reports",
     "title": "Módulo: Reports",
     "content": "Documentação relacionada ao módulo reports. ",
     "url": "/v1/backend/reports/#m%C3%B3dulo-reports",
     
     "relUrl": "/v1/backend/reports/#módulo-reports"
-  },"74": {
+  },"89": {
     "doc": "Reports",
     "title": "Reports",
     "content": " ",
     "url": "/v1/backend/reports/",
     
     "relUrl": "/v1/backend/reports/"
-  },"75": {
+  },"90": {
     "doc": "Backend",
     "title": "Documentação do Backend",
     "content": "Este documento contém a estrutura e explicação dos módulos backend do sistema. ",
     "url": "/v1/backend/#documenta%C3%A7%C3%A3o-do-backend",
     
     "relUrl": "/v1/backend/#documentação-do-backend"
-  },"76": {
+  },"91": {
     "doc": "Backend",
     "title": "Backend",
     "content": " ",
     "url": "/v1/backend/",
     
     "relUrl": "/v1/backend/"
-  },"77": {
+  },"92": {
     "doc": "Documentação",
     "title": "Bem-vindo à Documentação",
     "content": "Esta é a documentação oficial do Agenda Power. ",
     "url": "/v1/#bem-vindo-%C3%A0-documenta%C3%A7%C3%A3o",
     
     "relUrl": "/v1/#bem-vindo-à-documentação"
-  },"78": {
+  },"93": {
     "doc": "Documentação",
     "title": "API Documentation",
     "content": "📄 Swagger UI . ",
     "url": "/v1/#api-documentation",
     
     "relUrl": "/v1/#api-documentation"
-  },"79": {
+  },"94": {
     "doc": "Documentação",
     "title": "📌 Documentação – [Nome do Projeto]",
     "content": "📂 Estrutura da Documentação . | 🔹 Visão Geral → Objetivo e tecnologias utilizadas | 🔹 Arquitetura → Estrutura do projeto e pastas | 🔹 Módulos → Funcionalidades principais do sistema | 🔹 API &amp; Endpoints → Estrutura e exemplos de requisições | 🔹 Fluxos do Sistema → Como os módulos interagem | 🔹 Integrações → APIs externas e serviços conectados | 🔹 Regras de Negócio → Validações e regras aplicáveis | . ",
     "url": "/v1/#-documenta%C3%A7%C3%A3o--nome-do-projeto",
     
     "relUrl": "/v1/#-documentação--nome-do-projeto"
-  },"80": {
+  },"95": {
     "doc": "Documentação",
     "title": "📖 Visão Geral",
     "content": "Sistema desenvolvido para [finalidade do projeto], oferecendo [principais recursos]. Utilizamos tecnologias modernas para garantir escalabilidade e segurança. 🚀 Tecnologias . | Backend: NestJS, Prisma, PostgreSQL | Frontend: React Native | Autenticação: Google &amp; Apple Login | Infraestrutura: AWS (EC2, S3, RDS) | Pagamento: [Gateway de pagamento] | . ",
     "url": "/v1/#-vis%C3%A3o-geral",
     
     "relUrl": "/v1/#-visão-geral"
-  },"81": {
+  },"96": {
     "doc": "Documentação",
     "title": "🛠 Arquitetura",
     "content": "A estrutura do projeto segue um modelo modular, garantindo organização e escalabilidade. bash . CopiarEditar . /docs → Documentação do projeto /backend → API NestJS ├── src │ ├── modules │ │ ├── auth │ │ ├── users │ │ ├── appointments │ │ ├── payments │ │ ├── notifications │ ├── common │ │ ├── decorators │ │ ├── guards │ │ ├── filters │ │ ├── utils │ ├── prisma │ │ ├── schema.prisma ├── test → Testes automatizados /frontend → Aplicativo React Native ├── src │ ├── components │ ├── screens │ ├── services │ ├── contexts ├── assets → Ícones e imagens /infra → Configuração de DevOps e CI/CD . ",
     "url": "/v1/#-arquitetura",
     
     "relUrl": "/v1/#-arquitetura"
-  },"82": {
+  },"97": {
     "doc": "Documentação",
     "title": "📦 Módulos",
     "content": "Cada módulo representa uma funcionalidade principal do sistema. 🔹 Autenticação . | Login via Google e Apple | Tokens JWT com Refresh Token | Controle de permissões por roles | . 🔹 Agendamentos . | Criar, editar e cancelar agendamentos | Horários disponíveis e gestão de bloqueios | Agendamentos recorrentes | . 🔹 Financeiro . | Contas a pagar e receber | Métodos de pagamento (PIX, Cartão, Boleto) | Relatórios financeiros | . 🔹 Produtos &amp; Serviços . | Cadastro de serviços | Controle de estoque de produtos | Pacotes de serviços | . 🔹 Notificações . | WhatsApp e E-mail automatizados | Notificações de lembrete | . ",
     "url": "/v1/#-m%C3%B3dulos",
     
     "relUrl": "/v1/#-módulos"
-  },"83": {
+  },"98": {
     "doc": "Documentação",
     "title": "🖥 API &amp; Endpoints",
     "content": "Estrutura RESTful seguindo boas práticas. 🔹 Exemplo de Endpoints . | Método | Rota | Descrição | . | POST | /auth/login | Autentica o usuário | . | GET | /users/me | Retorna dados do usuário logado | . | GET | /appointments | Lista todos os agendamentos | . | POST | /payments | Realiza um pagamento | . | Documentação da API (Swagger) (Em construção) | . ",
     "url": "/v1/#-api--endpoints",
     
     "relUrl": "/v1/#-api--endpoints"
-  },"84": {
+  },"99": {
     "doc": "Documentação",
     "title": "🔄 Fluxos do Sistema",
     "content": "🔹 Fluxo de Agendamento . | Usuário escolhe serviço e profissional | Consulta horários disponíveis | Confirma agendamento | Notificação enviada por WhatsApp | . 🔹 Fluxo de Pagamento . | Usuário seleciona método de pagamento | API processa pagamento e confirma status | Atualização no financeiro e envio de recibo | . ",
     "url": "/v1/#-fluxos-do-sistema",
     
     "relUrl": "/v1/#-fluxos-do-sistema"
-  },"85": {
+  },"100": {
     "doc": "Documentação",
     "title": "🔗 Integrações",
     "content": ". | WhatsApp API → Envio de mensagens automáticas | Gateway de Pagamento → Processamento de transações | Google &amp; Apple Login → Autenticação simplificada | . ",
     "url": "/v1/#-integra%C3%A7%C3%B5es",
     
     "relUrl": "/v1/#-integrações"
-  },"86": {
+  },"101": {
     "doc": "Documentação",
     "title": "📜 Regras de Negócio",
     "content": ". | Cancelamentos devem ocorrer com até 24h de antecedência | Agendamentos só podem ser criados em horários disponíveis | Pagamentos devem ser registrados imediatamente após a transação | . ",
     "url": "/v1/#-regras-de-neg%C3%B3cio",
     
     "relUrl": "/v1/#-regras-de-negócio"
-  },"87": {
+  },"102": {
     "doc": "Documentação",
     "title": "📍 Telas e Fluxos",
     "content": "(Tela inicial, telas principais do sistema, descrição dos fluxos visuais) . ",
     "url": "/v1/#-telas-e-fluxos",
     
     "relUrl": "/v1/#-telas-e-fluxos"
-  },"88": {
+  },"103": {
     "doc": "Documentação",
     "title": "📌 Atualizações e Manutenção",
     "content": "Este documento será atualizado conforme novas funcionalidades forem implementadas. ✅ Conclusão . Essa estrutura garante organização e clareza, facilitando a colaboração entre times. Com o tempo, novas seções podem ser adicionadas conforme necessário. ",
     "url": "/v1/#-atualiza%C3%A7%C3%B5es-e-manuten%C3%A7%C3%A3o",
     
     "relUrl": "/v1/#-atualizações-e-manutenção"
-  },"89": {
+  },"104": {
     "doc": "Documentação",
     "title": "Documentação",
     "content": " ",
     "url": "/v1/",
     
     "relUrl": "/v1/"
-  },"90": {
+  },"105": {
     "doc": "Notifications",
     "title": "Notifications",
     "content": "Descrição sobre notifications. ",
     "url": "/v1/backend/communication/notifications.html",
     
     "relUrl": "/v1/backend/communication/notifications.html"
-  },"91": {
+  },"106": {
     "doc": "Payment methods",
     "title": "Payment methods",
     "content": "Descrição sobre payment_methods. ",
     "url": "/v1/backend/finance/payment_methods.html",
     
     "relUrl": "/v1/backend/finance/payment_methods.html"
-  },"92": {
+  },"107": {
     "doc": "Pagamentos",
     "title": "Pagamentos",
     "content": "Fluxo de pagamentos e faturas. ",
     "url": "/v1/workflows/payments.html",
     
     "relUrl": "/v1/workflows/payments.html"
-  },"93": {
+  },"108": {
+    "doc": "Payments",
+    "title": "Payments (Pagamentos)",
+    "content": "Tabela que gerencia os pagamentos de agendamentos e contas a receber. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único | . | appointment_id (FK) | UUID | Relacionamento com o agendamento | . | accounts_receivable_id (FK) | UUID | Relacionamento com contas a receber | . | value | Float | Valor do pagamento | . | payment_method | Enum | Método de pagamento (CASH, CREDIT_CARD, BANK_TRANSFER, etc.) | . | due_date | Date | Data de vencimento do pagamento | . | automatic | Boolean | Indica se o pagamento foi automático | . | installment_number | Int | Número da parcela (se parcelado) | . | installment_total | Int | Total de parcelas (se parcelado) | . | parent_payment_id (FK) | UUID | ID do pagamento pai (se for uma subdivisão) | . | expense_id (FK) | UUID | Relacionamento com despesas | . | customer_credit_id (FK) | UUID | Relacionamento com créditos do cliente | . | card_flag | String | Bandeira do cartão (se aplicável) | . | created_by_id (FK) | UUID | ID do usuário que criou o pagamento | . | updated_by_id (FK) | UUID | ID do usuário que atualizou o pagamento | . | created_at | DateTime | Data de criação do registro | . | updated_at | DateTime | Data de atualização do registro | . | deleted_at | DateTime | Data de exclusão lógica (soft delete) | . ",
+    "url": "/v1/backend/finance/payments.html#payments-pagamentos",
+    
+    "relUrl": "/v1/backend/finance/payments.html#payments-pagamentos"
+  },"109": {
+    "doc": "Payments",
+    "title": "Payment Summaries (Resumos de Pagamentos)",
+    "content": "Tabela que fornece um resumo dos pagamentos de um agendamento. | Campo | Tipo | Descrição | . | appointment_id (FK) | UUID | Relacionamento com o agendamento | . | price | Float | Valor total do agendamento | . | non_paid | Boolean | Indica se o pagamento ainda não foi concluído | . | total_paid | Float | Valor total já pago | . | automatic_payment | Boolean | Indica se o pagamento foi processado automaticamente | . | total_owned | Float | Valor restante a ser pago | . ",
+    "url": "/v1/backend/finance/payments.html#payment-summaries-resumos-de-pagamentos",
+    
+    "relUrl": "/v1/backend/finance/payments.html#payment-summaries-resumos-de-pagamentos"
+  },"110": {
     "doc": "Payments",
     "title": "Payments",
-    "content": "Descrição sobre payments. ",
+    "content": " ",
     "url": "/v1/backend/finance/payments.html",
     
     "relUrl": "/v1/backend/finance/payments.html"
-  },"94": {
+  },"111": {
+    "doc": "Predefined messages",
+    "title": "Predefined Messages (Mensagens Predefinidas)",
+    "content": "Tabela que armazena mensagens padrão cadastradas pelos usuários. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único | . | company_id (FK) | UUID | Relacionamento com a empresa | . | user_id (FK) | UUID | Relacionamento com o usuário que cadastrou a mensagem | . | name | String | Nome da mensagem | . | text | Text | Conteúdo da mensagem | . | deleted | Boolean | Indica se a mensagem foi excluída | . | deleted_at (nullable) | DateTime | Data de exclusão lógica (soft delete) | . | deleted_by_id (FK) | UUID | ID do usuário que excluiu a mensagem | . | created_by_id (FK) | UUID | ID do usuário que criou a mensagem | . | created_at | DateTime | Data de criação do registro | . | updated_by_id (FK) | UUID | ID do usuário que atualizou a mensagem | . | updated_at | DateTime | Data de atualização do registro | . ",
+    "url": "/v1/backend/communication/predefined_messages.html#predefined-messages-mensagens-predefinidas",
+    
+    "relUrl": "/v1/backend/communication/predefined_messages.html#predefined-messages-mensagens-predefinidas"
+  },"112": {
     "doc": "Predefined messages",
     "title": "Predefined messages",
-    "content": "Descrição sobre predefined_messages. ",
+    "content": " ",
     "url": "/v1/backend/communication/predefined_messages.html",
     
     "relUrl": "/v1/backend/communication/predefined_messages.html"
-  },"95": {
+  },"113": {
+    "doc": "Product categories",
+    "title": "Product Categories (Categorias de Produtos)",
+    "content": "Tabela que armazena as categorias dos produtos. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único da categoria | . | company_id (FK) | UUID | Identificador da empresa | . | created_by_id (FK) | UUID | Usuário que criou a categoria | . | updated_by_id (FK) | UUID | Usuário que fez a última atualização | . | name | String | Nome da categoria | . | deleted | Boolean | Indica se a categoria foi excluída (soft delete) | . | deleted_at | DateTime | Data de exclusão lógica (opcional) | . | created_at | DateTime | Data de criação | . | updated_at | DateTime | Última atualização | . ",
+    "url": "/v1/backend/products/product_categories.html#product-categories-categorias-de-produtos",
+    
+    "relUrl": "/v1/backend/products/product_categories.html#product-categories-categorias-de-produtos"
+  },"114": {
     "doc": "Product categories",
     "title": "Product categories",
-    "content": "Descrição sobre product_categories. ",
+    "content": " ",
     "url": "/v1/backend/products/product_categories.html",
     
     "relUrl": "/v1/backend/products/product_categories.html"
-  },"96": {
+  },"115": {
     "doc": "Product purchase items",
     "title": "Product purchase items",
     "content": "Descrição sobre product_purchase_items. ",
     "url": "/v1/backend/products/product_purchase_items.html",
     
     "relUrl": "/v1/backend/products/product_purchase_items.html"
-  },"97": {
+  },"116": {
     "doc": "Product purchases",
     "title": "Product purchases",
     "content": "Descrição sobre product_purchases. ",
     "url": "/v1/backend/products/product_purchases.html",
     
     "relUrl": "/v1/backend/products/product_purchases.html"
-  },"98": {
+  },"117": {
+    "doc": "Product sale items",
+    "title": "Product Sale Items (Itens Vendidos)",
+    "content": "Tabela que armazena os itens vendidos em cada venda de produtos. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único do item vendido | . | product_sale_id (FK) | UUID | Identificador da venda à qual o item pertence | . | product_id (FK) | UUID | Identificador do produto vendido | . | quantity | Int | Quantidade vendida | . | value | Float | Valor unitário do produto na venda | . | created_at | DateTime | Data de criação | . ",
+    "url": "/v1/backend/products/product_sale_items.html#product-sale-items-itens-vendidos",
+    
+    "relUrl": "/v1/backend/products/product_sale_items.html#product-sale-items-itens-vendidos"
+  },"118": {
     "doc": "Product sale items",
     "title": "Product sale items",
-    "content": "Descrição sobre product_sale_items. ",
+    "content": " ",
     "url": "/v1/backend/products/product_sale_items.html",
     
     "relUrl": "/v1/backend/products/product_sale_items.html"
-  },"99": {
+  },"119": {
+    "doc": "Product sales",
+    "title": "Product Sales (Vendas de Produtos)",
+    "content": "Tabela que registra as vendas de produtos realizadas por uma empresa. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único da venda | . | company_id (FK) | UUID | Identificador da empresa | . | customer_id (FK) | UUID | Identificador do cliente | . | sale_date | Date | Data da venda | . | comments | String | Comentários sobre a venda | . | discount | Float | Valor do desconto aplicado | . | discount_in_percentage | Boolean | Indica se o desconto é percentual | . | created_by_id (FK) | UUID | Usuário que registrou a venda | . | updated_by_id (FK) | UUID | Usuário que fez a última atualização | . | created_at | DateTime | Data de criação | . | updated_at | DateTime | Última atualização | . ",
+    "url": "/v1/backend/products/product_sales.html#product-sales-vendas-de-produtos",
+    
+    "relUrl": "/v1/backend/products/product_sales.html#product-sales-vendas-de-produtos"
+  },"120": {
     "doc": "Product sales",
     "title": "Product sales",
-    "content": "Descrição sobre product_sales. ",
+    "content": " ",
     "url": "/v1/backend/products/product_sales.html",
     
     "relUrl": "/v1/backend/products/product_sales.html"
-  },"100": {
+  },"121": {
+    "doc": "Product stock movements",
+    "title": "Product Stock Movements (Movimentações de Estoque de Produtos)",
+    "content": "Tabela que armazena os registros de movimentação de estoque dos produtos. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único da movimentação | . | product_id (FK) | UUID | Identificador do produto movimentado | . | quantity | Int | Quantidade movimentada | . | description | String | Descrição da movimentação | . | date | Date | Data da movimentação | . | movement_type | Enum | Tipo de movimentação (ADD, REMOVE) | . | created_at | DateTime | Data de criação | . ",
+    "url": "/v1/backend/products/product_stock_movements.html#product-stock-movements-movimenta%C3%A7%C3%B5es-de-estoque-de-produtos",
+    
+    "relUrl": "/v1/backend/products/product_stock_movements.html#product-stock-movements-movimentações-de-estoque-de-produtos"
+  },"122": {
     "doc": "Product stock movements",
     "title": "Product stock movements",
-    "content": "Descrição sobre product_stock_movements. ",
+    "content": " ",
     "url": "/v1/backend/products/product_stock_movements.html",
     
     "relUrl": "/v1/backend/products/product_stock_movements.html"
-  },"101": {
+  },"123": {
+    "doc": "Product suppliers",
+    "title": "Product Suppliers (Fornecedores de Produtos)",
+    "content": "Tabela que gerencia os fornecedores de produtos cadastrados por uma empresa. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único do fornecedor | . | company_id (FK) | UUID | Identificador da empresa | . | created_by_id (FK) | UUID | Usuário que cadastrou o fornecedor | . | updated_by_id (FK) | UUID | Usuário que fez a última atualização | . | name | String | Nome do fornecedor | . | deleted | Boolean | Indica se o fornecedor foi excluído (soft delete) | . | deleted_at | DateTime | Data de exclusão lógica (opcional) | . | created_at | DateTime | Data de criação | . | updated_at | DateTime | Última atualização | . ",
+    "url": "/v1/backend/products/product_suppliers.html#product-suppliers-fornecedores-de-produtos",
+    
+    "relUrl": "/v1/backend/products/product_suppliers.html#product-suppliers-fornecedores-de-produtos"
+  },"124": {
     "doc": "Product suppliers",
     "title": "Product suppliers",
-    "content": "Descrição sobre product_suppliers. ",
+    "content": " ",
     "url": "/v1/backend/products/product_suppliers.html",
     
     "relUrl": "/v1/backend/products/product_suppliers.html"
-  },"102": {
+  },"125": {
     "doc": "Products",
     "title": "Products",
     "content": "Descrição sobre products. ",
     "url": "/v1/backend/products/products.html",
     
     "relUrl": "/v1/backend/products/products.html"
-  },"103": {
+  },"126": {
+    "doc": "Service categories",
+    "title": "Service Categories (Categorias de Serviços)",
+    "content": "Tabela que armazena as categorias dos serviços oferecidos. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único | . | company_id (FK) | UUID | Identificador da empresa | . | created_by_id (FK) | UUID | Usuário que criou a categoria | . | updated_by_id (FK) | UUID | Usuário que fez a última atualização | . | name | String | Nome da categoria | . | deleted | Boolean | Indica se a categoria foi excluída (soft delete) | . | deleted_at | DateTime | Data de exclusão lógica (opcional) | . | created_at | DateTime | Data de criação | . | updated_at | DateTime | Última atualização | . ",
+    "url": "/v1/backend/services/service_categories.html#service-categories-categorias-de-servi%C3%A7os",
+    
+    "relUrl": "/v1/backend/services/service_categories.html#service-categories-categorias-de-serviços"
+  },"127": {
     "doc": "Service categories",
     "title": "Service categories",
-    "content": "Descrição sobre service_categories. ",
+    "content": " ",
     "url": "/v1/backend/services/service_categories.html",
     
     "relUrl": "/v1/backend/services/service_categories.html"
-  },"104": {
+  },"128": {
+    "doc": "Service package items",
+    "title": "Service Package Items (Itens do Pacote de Serviços)",
+    "content": "Tabela que gerencia os serviços incluídos nos pacotes de serviços. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único do item no pacote | . | service_package_id (FK) | UUID | Identificador do pacote de serviços | . | service_id (FK) | UUID | Identificador do serviço incluído no pacote | . | quantity | Int | Quantidade do serviço no pacote | . | price | Float | Preço individual do serviço no pacote | . | created_by_id (FK) | UUID | Usuário que adicionou o serviço ao pacote | . | updated_by_id (FK) | UUID | Usuário que fez a última atualização no item | . | deleted | Boolean | Indica se o item foi excluído (soft delete) | . | deleted_at | DateTime | Data de exclusão lógica (opcional) | . | created_at | DateTime | Data de criação | . | updated_at | DateTime | Última atualização | . ",
+    "url": "/v1/backend/services/service_package_items.html#service-package-items-itens-do-pacote-de-servi%C3%A7os",
+    
+    "relUrl": "/v1/backend/services/service_package_items.html#service-package-items-itens-do-pacote-de-serviços"
+  },"129": {
     "doc": "Service package items",
     "title": "Service package items",
-    "content": "Descrição sobre service_package_items. ",
+    "content": " ",
     "url": "/v1/backend/services/service_package_items.html",
     
     "relUrl": "/v1/backend/services/service_package_items.html"
-  },"105": {
+  },"130": {
+    "doc": "Service packages",
+    "title": "Service Packages (Pacotes de Serviços)",
+    "content": "Tabela que armazena os pacotes de serviços oferecidos pelas empresas. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único do pacote de serviços | . | company_id (FK) | UUID | Identificador da empresa | . | created_by_id (FK) | UUID | Usuário que criou o pacote de serviços | . | updated_by_id (FK) | UUID | Usuário que fez a última atualização | . | name | String | Nome do pacote de serviços | . | price | Float | Preço total do pacote | . | deleted | Boolean | Indica se o pacote foi excluído (soft delete) | . | deleted_at | DateTime | Data de exclusão lógica (opcional) | . | created_at | DateTime | Data de criação | . | updated_at | DateTime | Última atualização | . ",
+    "url": "/v1/backend/services/service_packages.html#service-packages-pacotes-de-servi%C3%A7os",
+    
+    "relUrl": "/v1/backend/services/service_packages.html#service-packages-pacotes-de-serviços"
+  },"131": {
     "doc": "Service packages",
     "title": "Service packages",
-    "content": "Descrição sobre service_packages. ",
+    "content": " ",
     "url": "/v1/backend/services/service_packages.html",
     
     "relUrl": "/v1/backend/services/service_packages.html"
-  },"106": {
+  },"132": {
     "doc": "Services",
     "title": "Services",
     "content": "Descrição sobre services. ",
     "url": "/v1/backend/services/services.html",
     
     "relUrl": "/v1/backend/services/services.html"
-  },"107": {
+  },"133": {
     "doc": "Total customer stats",
     "title": "Total customer stats",
     "content": "Descrição sobre total_customer_stats. ",
     "url": "/v1/backend/reports/total_customer_stats.html",
     
     "relUrl": "/v1/backend/reports/total_customer_stats.html"
-  },"108": {
+  },"134": {
     "doc": "User logs",
     "title": "User logs",
     "content": "Descrição sobre user_logs. ",
     "url": "/v1/backend/authentication/user_logs.html",
     
     "relUrl": "/v1/backend/authentication/user_logs.html"
-  },"109": {
+  },"135": {
+    "doc": "User roles",
+    "title": "Roles (Perfis de Usuário)",
+    "content": "Tabela que gerencia os diferentes perfis de usuários dentro do sistema. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único | . | value | String | Código interno do perfil (ex: EMPLOYEE_INDEPENDENT) | . | name | String | Nome do perfil visível no sistema | . | description | Text | Explicação detalhada do perfil | . | description_new (nullable) | Text | Nova descrição do perfil | . | internal | Boolean | Indica se é um perfil interno do sistema | . | professional | Boolean | Indica se o perfil se aplica a profissionais | . | active | Boolean | Indica se o perfil está ativo | . | sorting_order | Int | Define a ordem de exibição dos perfis | . | created_at | DateTime | Data de criação do registro | . | updated_at | DateTime | Data de atualização do registro | . ",
+    "url": "/v1/backend/authentication/user_roles.html#roles-perfis-de-usu%C3%A1rio",
+    
+    "relUrl": "/v1/backend/authentication/user_roles.html#roles-perfis-de-usuário"
+  },"136": {
     "doc": "User roles",
     "title": "User roles",
-    "content": "Descrição sobre user_roles. ",
+    "content": " ",
     "url": "/v1/backend/authentication/user_roles.html",
     
     "relUrl": "/v1/backend/authentication/user_roles.html"
-  },"110": {
+  },"137": {
+    "doc": "Users",
+    "title": "Users (Usuários)",
+    "content": "Tabela que armazena os dados dos usuários do sistema. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único do usuário | . | email | String | E-mail do usuário | . | password | String | Senha (hash) | . | role_id (FK) | UUID | Relacionado a roles (CLIENT, PROFESSIONAL, ADMIN) | . | theme_id (FK) | UUID | Relacionado a user_themes | . | company_id (FK) | UUID | Relacionado a companies | . | createdAt | DateTime | Data de criação | . | updatedAt | DateTime | Última atualização | . | deletedAt | DateTime | Data de exclusão lógica | . ",
+    "url": "/v1/backend/authentication/users.html#users-usu%C3%A1rios",
+    
+    "relUrl": "/v1/backend/authentication/users.html#users-usuários"
+  },"138": {
+    "doc": "Users",
+    "title": "User Themes (Temas do Usuário)",
+    "content": "Tabela que define a personalização da interface do usuário. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único do tema | . | agenda_color_id | UUID | ID da cor da agenda | . | agenda_icon | String | Ícone da agenda | . | createdAt | DateTime | Data de criação | . | updatedAt | DateTime | Última atualização | . ",
+    "url": "/v1/backend/authentication/users.html#user-themes-temas-do-usu%C3%A1rio",
+    
+    "relUrl": "/v1/backend/authentication/users.html#user-themes-temas-do-usuário"
+  },"139": {
+    "doc": "Users",
+    "title": "User Account Status (Status da Conta do Usuário)",
+    "content": "Tabela que armazena informações sobre o status da conta dos usuários. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único do status | . | company_name | String | Nome da empresa do usuário | . | account_type | Enum | Tipo de conta (TRIAL, PREMIUM, etc.) | . | trial_expiration_date | DateTime | Data de expiração do período de teste | . | max_number_users | Int | Número máximo de usuários permitidos | . | createdAt | DateTime | Data de criação | . | apple_subscription | Boolean | Indica se tem assinatura Apple | . | android_subscription | Boolean | Indica se tem assinatura Android | . | paid_grace_period_end_date | DateTime | Data de fim do período de carência | . | subscription_type | String | Tipo de assinatura | . | last_paid_at | DateTime | Última data de pagamento | . | android_product_id | String | ID do produto Android | . | can_pay_boleto | Boolean | Indica se pode pagar via boleto | . | mobile_account | Boolean | Conta criada no mobile | . | web_account | Boolean | Conta criada no web | . | paypal | Boolean | Integração com PayPal | . | stripe | Boolean | Integração com Stripe | . | asaas | Boolean | Integração com Asaas | . | boleto | Boolean | Opção de boleto disponível | . | premium_activated | Boolean | Indica se o plano premium foi ativado | . ",
+    "url": "/v1/backend/authentication/users.html#user-account-status-status-da-conta-do-usu%C3%A1rio",
+    
+    "relUrl": "/v1/backend/authentication/users.html#user-account-status-status-da-conta-do-usuário"
+  },"140": {
     "doc": "Users",
     "title": "Users",
-    "content": "Descrição sobre users. ",
+    "content": " ",
     "url": "/v1/backend/authentication/users.html",
     
     "relUrl": "/v1/backend/authentication/users.html"
-  },"111": {
+  },"141": {
+    "doc": "Waiting appointments",
+    "title": "Waiting Appointments (Fila de Espera de Agendamentos)",
+    "content": "Tabela que gerencia os agendamentos em fila de espera. | Campo | Tipo | Descrição | . | id (PK) | UUID | Identificador único | . | company_id (FK) | UUID | Identificador da empresa | . | customer_id (FK) | UUID | Identificador do cliente | . | service_id (FK) | UUID | Identificador do serviço | . | waiting_appointment_has_service | Boolean | Indica se há um serviço vinculado | . | preference_order | Int | Ordem de preferência na fila | . | comments | String | Comentários sobre o agendamento | . | created_by_id (FK) | UUID | Usuário que criou o agendamento | . | updated_by_id (FK) | UUID | Usuário que atualizou o agendamento | . | deleted | Boolean | Indica se o agendamento foi excluído | . | deleted_at | DateTime | Data de exclusão lógica | . | created_at | DateTime | Data de criação | . | updated_at | DateTime | Última atualização | . ",
+    "url": "/v1/backend/appointments/waiting_appointments.html#waiting-appointments-fila-de-espera-de-agendamentos",
+    
+    "relUrl": "/v1/backend/appointments/waiting_appointments.html#waiting-appointments-fila-de-espera-de-agendamentos"
+  },"142": {
     "doc": "Waiting appointments",
     "title": "Waiting appointments",
-    "content": "Descrição sobre waiting_appointments. ",
+    "content": " ",
     "url": "/v1/backend/appointments/waiting_appointments.html",
     
     "relUrl": "/v1/backend/appointments/waiting_appointments.html"
-  },"112": {
+  },"143": {
     "doc": "Whatsapp config",
     "title": "Whatsapp config",
     "content": "Descrição sobre whatsapp_config. ",
