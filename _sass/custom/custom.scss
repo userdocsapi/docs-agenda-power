@@ -2,14 +2,22 @@ a {
   color: black;
 }
 
+.nav-list-expander svg {
+  color: white !important;
+}
+
 /* Ajuste o conteúdo principal para ocupar mais espaço */
 .main-content {
   max-width: 100%;
 }
 
+.site-nav {
+  width: 100%;
+  margin: 0px !important;
+}
 .side-bar {
   width: 250px;
-  overflow-y: auto !important;
+
   max-height: 100vh !important;
 
   background-color: #191a1a;
@@ -43,6 +51,9 @@ a {
 
 .nav-list .nav-list-item {
   opacity: 1;
+}
+.nav-list .nav-list-item.disabled {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .site-header {
@@ -92,4 +103,40 @@ a {
 .site-footer a:hover {
   text-decoration: underline;
   color: #ffffff !important;
+}
+
+.icon {
+  color: #ffffff !important;
+}
+
+.search-input:focus + .search-label .search-icon,
+.search-result-doc .search-result-icon {
+  color: black !important;
+}
+
+/* Estiliza a barra de rolagem da sidebar */
+.side-bar::-webkit-scrollbar {
+  width: 8px; /* Largura do scroll */
+}
+
+/* Estiliza o fundo da barra de rolagem */
+.side-bar::-webkit-scrollbar-track {
+  background: #191a1a !important; /* Deixa o fundo invisível */
+}
+
+/* Estiliza o "thumb" (a parte móvel do scroll) */
+.side-bar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2); /* Cor suave */
+  border-radius: 10px; /* Deixa o scroll arredondado */
+  transition: background 0.3s ease-in-out;
+}
+
+/* Efeito no hover da barra de rolagem */
+.side-bar::-webkit-scrollbar-thumb:hover {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.4
+  ); /* Fica um pouco mais visível no hover */
 }

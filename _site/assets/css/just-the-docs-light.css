@@ -2297,23 +2297,21 @@ a.skip-to-main:focus, a.skip-to-main:active { color: #7253ed; background-color: 
 
 div.opaque { background-color: #fff; }
 
-/* Definição padrão para telas grandes */
-.side-bar { width: 250px; /* Reduz a largura da sidebar */ overflow-y: auto !important; max-height: 100vh !important; }
-
-html, body { overflow-x: hidden !important; }
-
 a { color: black; }
+
+.nav-list-expander svg { color: white !important; }
 
 /* Ajuste o conteúdo principal para ocupar mais espaço */
 .main-content { max-width: 100%; }
 
-.side-bar { background-color: #191a1a; color: #e0e0e0; }
+.site-nav { width: 100%; margin: 0px !important; }
+
+.side-bar { width: 250px; max-height: 100vh !important; background-color: #191a1a; color: #e0e0e0; }
 
 .nav-list-link { color: #b0b0b0; }
 
 .nav-list .nav-list-item .nav-list-link:hover, .nav-list .nav-list-item .nav-list-link.active { background-color: rgba(255, 255, 255, 0.3) !important; background-image: none !important; color: #ffffff !important; border-radius: 4px; transition: background-color 0.2s ease-in-out; }
 
-/* Força a remoção do efeito */
 .nav-list .nav-list-item .nav-list-link::after { content: none !important; }
 
 .nav-list .nav-list-item .nav-list-link { color: #ddd; }
@@ -2321,6 +2319,8 @@ a { color: black; }
 .nav-list .nav-list-item .nav-list-link:hover { color: #fff; }
 
 .nav-list .nav-list-item { opacity: 1; }
+
+.nav-list .nav-list-item.disabled { color: rgba(255, 255, 255, 0.5); }
 
 .site-header { background-color: #191a1a; color: #e0e0e0; }
 
@@ -2337,3 +2337,19 @@ a { color: black; }
 .site-footer a { color: #cccccc !important; text-decoration: none; font-weight: 500; }
 
 .site-footer a:hover { text-decoration: underline; color: #ffffff !important; }
+
+.icon { color: #ffffff !important; }
+
+.search-input:focus + .search-label .search-icon, .search-result-doc .search-result-icon { color: black !important; }
+
+/* Estiliza a barra de rolagem da sidebar */
+.side-bar::-webkit-scrollbar { width: 8px; /* Largura do scroll */ }
+
+/* Estiliza o fundo da barra de rolagem */
+.side-bar::-webkit-scrollbar-track { background: #191a1a !important; /* Deixa o fundo invisível */ }
+
+/* Estiliza o "thumb" (a parte móvel do scroll) */
+.side-bar::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.2); /* Cor suave */ border-radius: 10px; /* Deixa o scroll arredondado */ transition: background 0.3s ease-in-out; }
+
+/* Efeito no hover da barra de rolagem */
+.side-bar::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.4); /* Fica um pouco mais visível no hover */ }
