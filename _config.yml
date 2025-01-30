@@ -1,0 +1,15 @@
+title: "Agenda Power"
+repository: "userdocsapi/docs-agenda-power"
+remote_theme: "just-the-docs/just-the-docs"
+nav_order: 1
+search_enabled: true
+aux_links:
+  "Repositório no GitHub":
+    - "https://github.com/userdocsapi/docs-agenda-power"
+
+just_the_docs:
+  collections:
+    v1:
+      name: "Versão 1"
+      nav_order: 1
+      output: true
