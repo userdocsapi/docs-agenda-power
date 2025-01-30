@@ -2426,9 +2426,17 @@ a.skip-to-main:focus, a.skip-to-main:active { color: #2c84fa; background-color: 
 
 div.opaque { background-color: #27262b; }
 
-body { font-family: "Fira Sans", sans-serif; }
+/* Define a fonte globalmente */
+body { font-family: "Inter", sans-serif !important; }
+
+/* Ajusta a fonte para títulos e navegação */
+h1, h2, h3, h4, h5, h6 { font-family: "Inter", sans-serif !important; font-weight: 600; }
+
+.nav-list, .side-bar, .main-content { font-family: "Inter", sans-serif !important; }
 
 a { color: black; }
+
+.site-header a:hover { background: none !important; box-shadow: none !important; }
 
 .nav-list-expander svg { color: white !important; }
 
@@ -2486,3 +2494,5 @@ a { color: black; }
 
 /* Efeito no hover da barra de rolagem */
 ::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.4); /* Fica um pouco mais visível no hover */ }
+
+.site-logo { background-position: center center !important; }

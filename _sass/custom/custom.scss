@@ -1,11 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;700&display=swap");
 
+/* Define a fonte globalmente */
 body {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Inter", sans-serif !important;
+}
+
+/* Ajusta a fonte para títulos e navegação */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 600;
+}
+
+.nav-list,
+.side-bar,
+.main-content {
+  font-family: "Inter", sans-serif !important;
 }
 
 a {
   color: black;
+}
+
+.site-header a:hover {
+  background: none !important;
+  box-shadow: none !important;
 }
 
 .nav-list-expander svg {

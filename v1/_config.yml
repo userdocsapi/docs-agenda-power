@@ -4,46 +4,46 @@ remote_theme: "just-the-docs/just-the-docs"
 footer:
   content: "Documentação criada por [Seu Nome ou Empresa](https://seusite.com)"
 baseurl: "/v1"
-callouts:
-  custom:
-    title: Customizado
-    color: pink
-just_the_docs:
+mermaid: true
+livereload: true
+incremental: true
+force_polling: true
+ust_the_docs:
   collections:
     backend:
-      name: "Backend"
+      name: "🖥️ **Backend**"
       nav_order: 2
       output: true
       subcollections:
         authentication:
-          name: "Autenticação e Usuários"
+          name: "🔐 **Autenticação e Usuários**"
           nav_order: 1
         companies:
-          name: "Empresas"
+          name: "🏢 **Empresas**"
           nav_order: 2
         customers:
-          name: "Clientes"
+          name: "👤 **Clientes**"
           nav_order: 3
         appointments:
-          name: "Agendamentos"
+          name: "📅 **Agendamentos**"
           nav_order: 4
         services:
-          name: "Serviços"
+          name: "🛠️ **Serviços**"
           nav_order: 5
         financial:
-          name: "Financeiro"
+          name: "💰 **Financeiro**"
           nav_order: 6
         products:
-          name: "Estoque e Produtos"
+          name: "📦 **Estoque e Produtos**"
           nav_order: 7
         communication:
-          name: "Comunicação"
+          name: "📢 **Comunicação**"
           nav_order: 8
         reports:
-          name: "Relatórios e Métricas"
+          name: "📊 **Relatórios e Métricas**"
           nav_order: 9
         anamnesis:
-          name: "Anamnese"
+          name: "📋 **Anamnese**"
           nav_order: 10
 
     authentication:
@@ -179,7 +179,3 @@ just_the_docs:
           name: "Respostas dos Clientes"
         anamnese_signatures:
           name: "Assinaturas Digitais"
-mermaid: true
-livereload: true
-incremental: true
-force_polling: true
