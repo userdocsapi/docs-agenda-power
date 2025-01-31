@@ -1,48 +1,25 @@
 ---
-title: 'Appointment payments'
+title: 'Appointment reminders'
 parent: 'Appointments'
 nav_order: 2
 ---
 
-# Appointment payments (Pagamentos de Agendamentos)
+# Appointment reminders (Lembretes de Agendamentos)
 
-O módulo **Appointment Payments** gerencia os pagamentos relacionados aos agendamentos, garantindo o controle financeiro das transações associadas aos serviços prestados.
+O módulo **Appointment reminders** gerencia o envio automático de lembretes para os clientes sobre seus agendamentos, garantindo maior adesão e redução de faltas. Ele possibilita notificações via e-mail, SMS ou WhatsApp com mensagens personalizadas e programadas conforme a necessidade da empresa.
 
-## ➡️ Funcionalidades Principais
+| Campo                   | Tipo                | Descrição |
+|-------------------------|---------------------|--------------------------------|
+| `id`                   | UUID                | Identificador único da assinatura |
+| `anamnese_form_id`     | UUID                | Referência ao formulário de anamnese |
+| `customer_id`          | UUID                | Identificador do cliente |
+| `signature_date`       | DateTime            | Data e hora da assinatura |
+| `signed_by`            | String              | Nome do assinante |
+| `signature_method`     | ENUM                | Método utilizado para assinatura (digital, manual) |
+| `signature_data`       | JSON                | Dados da assinatura eletrônica |
+| `created_at`           | DateTime            | Data de criação do registro |
+| `updated_at`           | DateTime            | Data da última atualização |
+| `deleted_at`           | DateTime (nullable) | Data de exclusão (soft delete) |
 
-- **Registro de Pagamentos**  
-  Armazena informações detalhadas sobre pagamentos efetuados para cada agendamento.
 
-- **Métodos de Pagamento**  
-  Suporte a diversas formas de pagamento, como cartão de crédito, débito, boleto, e Pix.
-
-- **Consulta de Histórico**  
-  Permite visualizar pagamentos realizados, pendentes e cancelados.
-
-- **Reembolsos e Ajustes**  
-  Suporte a estornos e ajustes de valores caso necessário.
-
-## ➡️ Estrutura do Módulo
-
-```bash
-/appointments/appointment_payments.md  # Documentação sobre pagamentos de agendamentos
-```
-
-## ➡️ Benefícios
-
-- Facilita a gestão financeira dos pagamentos vinculados aos serviços.
-- Proporciona transparência no controle de valores recebidos.
-- Integra-se a outros módulos financeiros para relatórios consolidados.
-
-## ➡️ Endpoints Relacionados
-
-| Método  | Rota                                  | Descrição |
-|---------|--------------------------------------|----------------------------------|
-| `GET`   | `/appointments/payments`           | Lista todos os pagamentos de agendamentos |
-| `GET`   | `/appointments/payments/{id}`      | Retorna detalhes de um pagamento específico |
-| `POST`  | `/appointments/payments`           | Registra um novo pagamento |
-| `PUT`   | `/appointments/payments/{id}`      | Atualiza informações de um pagamento |
-| `DELETE`| `/appointments/payments/{id}`      | Remove um pagamento registrado |
-
-Este módulo é essencial para manter o controle dos pagamentos e garantir a confiabilidade nas transações financeiras da plataforma.
 

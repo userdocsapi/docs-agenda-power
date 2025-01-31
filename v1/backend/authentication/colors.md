@@ -1,3 +1,9 @@
+---
+title: 'Authentication'
+parent: 'Authentication'
+nav_order: 1
+---
+
 # Colors (Cores)
 
 Tabela que armazena as cores disponíveis para personalização de temas e elementos visuais.
