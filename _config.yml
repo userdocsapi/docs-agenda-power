@@ -10,6 +10,6 @@ aux_links:
 just_the_docs:
   collections:
     v1:
-      name: "Version 0101"
+      name: "API v0.1.0"
       nav_order: 1
       output: true
