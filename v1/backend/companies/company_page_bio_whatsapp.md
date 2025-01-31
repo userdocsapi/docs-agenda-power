@@ -1,3 +1,9 @@
+---
+title: 'Company page bio WhatsApp'
+parent: 'Companies'
+nav_order: 2
+---
+
 # Company Page Bio WhatsApp (WhatsApp do Perfil Público)
 
 Tabela que armazena os números de WhatsApp vinculados ao perfil público da empresa.

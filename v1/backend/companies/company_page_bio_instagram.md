@@ -1,3 +1,9 @@
+---
+title: 'Company page bio Instagram'
+parent: 'Companies'
+nav_order: 2
+---
+
 # Company Page Bio Instagram (Instagram do Perfil Público)
 
 Tabela que armazena as contas do Instagram associadas ao perfil público da empresa.
