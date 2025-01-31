@@ -10,6 +10,11 @@ incremental: true
 force_polling: true
 ust_the_docs:
   collections:
+    flow:
+      collections:
+        flow_appointment:
+          name: "Fluxo de Agendamento"
+    
     backend:
       name: "Backend teste"
       nav_order: 2
@@ -179,3 +184,4 @@ ust_the_docs:
           name: "Respostas dos Clientes"
         anamnese_signatures:
           name: "Assinaturas Digitais"
+

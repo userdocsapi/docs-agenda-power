@@ -3,6 +3,7 @@ repository: "userdocsapi/docs-agenda-power"
 remote_theme: "just-the-docs/just-the-docs"
 nav_order: 1
 search_enabled: true
+mermaid: true
 logo: "/assets/images/logo.png"
 aux_links:
   "Repositório no GitHub":
@@ -13,3 +14,4 @@ just_the_docs:
       name: "API v0.1.0"
       nav_order: 1
       output: true
+      
