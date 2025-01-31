@@ -1,7 +1,7 @@
 ---
-title: 'Anamnese answers'
+title: 'Anamnese answers details'
 parent: 'Anamnese'
-nav_order: 2
+nav_order: 1
 ---
 
 # Anamnese Answers Details (Detalhes das Respostas da Anamnese)

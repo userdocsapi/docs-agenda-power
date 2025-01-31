@@ -1,151 +1,46 @@
 ---
-title: "Documentação"
+title: 'Documentação Geral'
 nav_order: 1
 ---
-# Bem-vindo à Documentação
-Esta é a documentação oficial do Agenda Power.
 
-## API Documentation
-📄 [Swagger UI](https://meusistema.com/api/docs)
+# Documentação Geral
 
-# **📌 Documentação – [Nome do Projeto]**
+Bem-vindo à documentação oficial do **Agenda Power**. Aqui você encontrará informações detalhadas sobre os módulos do sistema, suas funcionalidades e como utilizá-los.
 
-### **📂 Estrutura da Documentação**
+## ➡️ Estrutura da Documentação
 
-- **🔹 Visão Geral** → Objetivo e tecnologias utilizadas
-- **🔹 Arquitetura** → Estrutura do projeto e pastas
-- **🔹 Módulos** → Funcionalidades principais do sistema
-- **🔹 API & Endpoints** → Estrutura e exemplos de requisições
-- **🔹 Fluxos do Sistema** → Como os módulos interagem
-- **🔹 Integrações** → APIs externas e serviços conectados
-- **🔹 Regras de Negócio** → Validações e regras aplicáveis
+A documentação está organizada em módulos para facilitar a navegação e o entendimento do sistema. Cada módulo representa uma parte essencial do funcionamento da aplicação.
 
----
+### **Módulos Disponíveis**
 
-## **📖 Visão Geral**
+- **[Appointments](backend/appointments/)** → Gerenciamento de agendamentos e horários disponíveis.
+- **[Finance](backend/finance.md)** → Controle financeiro, pagamentos e relatórios de fluxo de caixa.
+- **[Communication](backend/communication.md)** → Notificações, e-mails e mensagens automatizadas.
+- **[Authentication](backend/authentication.md)** → Sistema de autenticação e gerenciamento de usuários.
+- **[Companies](backend/companies.md)** → Informações e configurações das empresas cadastradas.
+- **[Customers](backend/customers.md)** → Gerenciamento de clientes e seus dados.
+- **[Products](backend/products.md)** → Cadastro e controle de produtos e serviços.
+- **[Reports](backend/reports.md)** → Geração de relatórios e métricas do sistema.
+- **[Anamnese](backend/anamnese.md)** → Questionários e formulários para coleta de informações.
 
-Sistema desenvolvido para **[finalidade do projeto]**, oferecendo **[principais recursos]**.  
-Utilizamos tecnologias modernas para garantir **escalabilidade** e **segurança**.
+## ➡️ Tecnologias Utilizadas
 
-### **🚀 Tecnologias**
+O sistema **Agenda Power** é desenvolvido utilizando tecnologias modernas para garantir **performance, segurança e escalabilidade**:
 
-- **Backend:** NestJS, Prisma, PostgreSQL
+- **Backend:** NestJS, Prisma ORM e PostgreSQL
 - **Frontend:** React Native
 - **Autenticação:** Google & Apple Login
 - **Infraestrutura:** AWS (EC2, S3, RDS)
-- **Pagamento:** [Gateway de pagamento]
+- **Pagamentos:** Integração com gateways de pagamento
+
+## ➡️ API & Endpoints
+
+A API do sistema segue o padrão **RESTful** e oferece endpoints para todas as funcionalidades. Para mais detalhes, consulte a [Documentação da API](api.md).
+
+## ➡️ Atualizações e Melhorias
+
+Esta documentação será constantemente atualizada conforme novas funcionalidades forem implementadas. Caso tenha sugestões ou encontre inconsistências, entre em contato com a equipe de desenvolvimento.
 
 ---
 
-## **🛠 Arquitetura**
 
-A estrutura do projeto segue um modelo **modular**, garantindo organização e escalabilidade.
-
-bash
-
-CopiarEditar
-
-`/docs               → Documentação do projeto   /backend           → API NestJS     ├── src     │   ├── modules     │   │   ├── auth     │   │   ├── users     │   │   ├── appointments     │   │   ├── payments     │   │   ├── notifications     │   ├── common     │   │   ├── decorators     │   │   ├── guards     │   │   ├── filters     │   │   ├── utils     │   ├── prisma     │   │   ├── schema.prisma     ├── test         → Testes automatizados   /frontend          → Aplicativo React Native     ├── src     │   ├── components     │   ├── screens     │   ├── services     │   ├── contexts     ├── assets       → Ícones e imagens   /infra             → Configuração de DevOps e CI/CD`  
-
----
-
-## **📦 Módulos**
-
-Cada módulo representa uma funcionalidade principal do sistema.
-
-### **🔹 Autenticação**
-
-- Login via Google e Apple
-- Tokens JWT com Refresh Token
-- Controle de permissões por **roles**
-
-### **🔹 Agendamentos**
-
-- Criar, editar e cancelar agendamentos
-- Horários disponíveis e gestão de bloqueios
-- Agendamentos recorrentes
-
-### **🔹 Financeiro**
-
-- Contas a pagar e receber
-- Métodos de pagamento (PIX, Cartão, Boleto)
-- Relatórios financeiros
-
-### **🔹 Produtos & Serviços**
-
-- Cadastro de serviços
-- Controle de estoque de produtos
-- Pacotes de serviços
-
-### **🔹 Notificações**
-
-- WhatsApp e E-mail automatizados
-- Notificações de lembrete
-
----
-
-## **🖥 API & Endpoints**
-
-Estrutura RESTful seguindo boas práticas.
-
-### **🔹 Exemplo de Endpoints**
-
-|Método|Rota|Descrição|
-|---|---|---|
-|`POST`|`/auth/login`|Autentica o usuário|
-|`GET`|`/users/me`|Retorna dados do usuário logado|
-|`GET`|`/appointments`|Lista todos os agendamentos|
-|`POST`|`/payments`|Realiza um pagamento|
-
-- [Documentação da API (Swagger)](backend/swagger.md) *(Em construção)*
-
----
-
-## **🔄 Fluxos do Sistema**
-
-### **🔹 Fluxo de Agendamento**
-
-1. Usuário escolhe serviço e profissional
-2. Consulta horários disponíveis
-3. Confirma agendamento
-4. Notificação enviada por WhatsApp
-
-### **🔹 Fluxo de Pagamento**
-
-1. Usuário seleciona método de pagamento
-2. API processa pagamento e confirma status
-3. Atualização no financeiro e envio de recibo
-
----
-
-## **🔗 Integrações**
-
-- **WhatsApp API** → Envio de mensagens automáticas
-- **Gateway de Pagamento** → Processamento de transações
-- **Google & Apple Login** → Autenticação simplificada
-
----
-
-## **📜 Regras de Negócio**
-
-- **Cancelamentos** devem ocorrer com até 24h de antecedência
-- **Agendamentos** só podem ser criados em horários disponíveis
-- **Pagamentos** devem ser registrados imediatamente após a transação
-
----
-
-## **📍 Telas e Fluxos**
-
-(Tela inicial, telas principais do sistema, descrição dos fluxos visuais)
-
----
-
-## **📌 Atualizações e Manutenção**
-
-Este documento será atualizado conforme novas funcionalidades forem implementadas.
-
----
-
-### **✅ Conclusão**
-
-Essa estrutura garante **organização e clareza**, facilitando a colaboração entre times. Com o tempo, novas seções podem ser adicionadas conforme necessário.

@@ -10,6 +10,6 @@ aux_links:
 just_the_docs:
   collections:
     v1:
-      name: "Versão 1"
+      name: "Version 0101"
       nav_order: 1
       output: true

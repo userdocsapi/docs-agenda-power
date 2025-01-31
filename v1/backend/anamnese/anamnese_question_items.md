@@ -1,3 +1,9 @@
+---
+title: 'Anamnese question'
+parent: 'Anamnese'
+nav_order: 1
+---
+
 # Anamnese Question Items (Opções de Perguntas da Anamnese)
 
 Tabela que armazena as opções de resposta associadas às perguntas dos formulários de anamnese.
